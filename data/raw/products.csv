@@ -1,0 +1,351 @@
+product_id,product_name,category,brand,unit_price,supplier_id,status
+P0001,Cadbury Milk,Grocery,Nestle,342.58,SUP024,Active
+P0002,Dabur Chocolate,Fruits & Vegetables,ITC,57.36,SUP003,Active
+P0003,Nestle Butter,Fruits & Vegetables,Amul,846.26,SUP023,Active
+P0004,ITC Biscuits,Bakery,P&G,424.5,SUP028,Active
+P0005,Pepsi Shampoo,Personal Care,Britannia,241.66,SUP025,Active
+P0006,Cadbury Chocolate,Home Care,Cadbury,544.88,SUP012,Inactive
+P0007,Britannia Milk,Bakery,Dabur,195.99,SUP030,Active
+P0008,Cadbury Butter,Grocery,P&G,1329.32,SUP012,Inactive
+P0009,Nestle Chocolate,Dairy,Nestle,1161.87,SUP003,Active
+P0010,Cadbury Shampoo,Grocery,Parle,957.17,SUP012,Active
+P0011,HUL Soap,Snacks,Britannia,1055.71,SUP022,Active
+P0012,P&G Juice,Frozen Food,Nestle,253.47,SUP013,Active
+P0013,Dabur Biscuits,Personal Care,Amul,351.28,SUP002,Active
+P0014,ITC Rice,Chocolate,Nestle,1370.57,SUP019,Active
+P0015,Nestle Bread,Home Care,Parle,222.88,SUP005,Active
+P0016,Dabur Butter,Grocery,P&G,648.37,SUP019,Active
+P0017,HUL Biscuits,Beverages,Dabur,745.34,SUP025,Active
+P0018,Cadbury Juice,Beverages,ITC,898.65,SUP013,Active
+P0019,P&G Bread,Frozen Food,Britannia,1456.91,SUP028,Active
+P0020,Cadbury Butter,Grocery,HUL,176.21,SUP014,Active
+P0021,Parle Milk,Grocery,Dabur,1145.32,SUP017,Active
+P0022,Britannia Butter,Fruits & Vegetables,Nestle,237.73,SUP025,Active
+P0023,Dabur Butter,Dairy,P&G,492.99,SUP001,Active
+P0024,HUL Rice,Snacks,Amul,368.9,SUP019,Active
+P0025,Cadbury Bread,Chocolate,Dabur,1151.09,SUP005,Active
+P0026,Dabur Juice,Grocery,Dabur,1309.93,SUP014,Active
+P0027,Dabur Biscuits,Grocery,ITC,1492.77,SUP021,Active
+P0028,Parle Butter,Bakery,Cadbury,379.38,SUP003,Active
+P0029,Amul Cookies,Frozen Food,Nestle,886.78,SUP001,Active
+P0030,Amul Biscuits,Chocolate,Amul,1290.86,SUP003,Active
+P0031,Nestle Rice,Bakery,Nestle,813.46,SUP024,Inactive
+P0032,P&G Bread,Snacks,Parle,1213.17,SUP007,Active
+P0033,Cadbury Shampoo,Personal Care,ITC,622.54,SUP028,Active
+P0034,Cadbury Milk,Home Care,HUL,1202.88,SUP004,Active
+P0035,Nestle Biscuits,Frozen Food,Parle,218.87,SUP006,Active
+P0036,Parle Biscuits,Chocolate,Parle,1213.95,SUP028,Active
+P0037,Cadbury Milk,Frozen Food,Amul,1453.8,SUP030,Active
+P0038,Pepsi Shampoo,Bakery,Parle,328.48,SUP013,Active
+P0039,Pepsi Shampoo,Dairy,ITC,405.15,SUP026,Active
+P0040,Britannia Shampoo,Frozen Food,Parle,240.65,SUP010,Active
+P0041,Amul Cookies,Frozen Food,Amul,1124.48,SUP002,Active
+P0042,P&G Bread,Frozen Food,Dabur,244.57,SUP017,Active
+P0043,Pepsi Chocolate,Fruits & Vegetables,Cadbury,1016.07,SUP008,Active
+P0044,Cadbury Cookies,Snacks,P&G,895.83,SUP020,Active
+P0045,ITC Cookies,Fruits & Vegetables,Dabur,481.39,SUP009,Active
+P0046,HUL Biscuits,Grocery,ITC,205.01,SUP021,Active
+P0047,Parle Soap,Chocolate,Amul,692.85,SUP019,Active
+P0048,Cadbury Butter,Snacks,Dabur,405.15,SUP030,Active
+P0049,Cadbury Biscuits,Personal Care,Britannia,245.04,SUP027,Active
+P0050,Britannia Cookies,Frozen Food,Amul,1005.12,SUP018,Active
+P0051,Cadbury Juice,Grocery,Cadbury,1335.67,SUP024,Active
+P0052,Pepsi Rice,Grocery,P&G,323.84,SUP011,Active
+P0053,Britannia Butter,Bakery,Britannia,1358.95,SUP028,Active
+P0054,Cadbury Shampoo,Grocery,Amul,15.28,SUP025,Active
+P0055,Britannia Juice,Bakery,Dabur,1061.44,SUP018,Active
+P0056,Cadbury Chocolate,Beverages,Dabur,63.68,SUP012,Inactive
+P0057,Dabur Juice,Home Care,Pepsi,72.32,SUP012,Active
+P0058,HUL Biscuits,Snacks,Cadbury,536.98,SUP018,Active
+P0059,P&G Juice,Snacks,Pepsi,1464.55,SUP026,Active
+P0060,ITC Milk,Beverages,HUL,1175.76,SUP014,Active
+P0061,Britannia Juice,Chocolate,ITC,1309.53,SUP028,Active
+P0062,Nestle Biscuits,Bakery,HUL,464.73,SUP026,Active
+P0063,Nestle Milk,Snacks,ITC,499.11,SUP028,Active
+P0064,Britannia Soap,Frozen Food,ITC,1022.48,SUP027,Active
+P0065,HUL Milk,Chocolate,Britannia,276.07,SUP009,Active
+P0066,Cadbury Cookies,Home Care,HUL,1095.53,SUP011,Active
+P0067,P&G Butter,Chocolate,ITC,1350.26,SUP007,Active
+P0068,Amul Shampoo,Dairy,Dabur,1389.11,SUP018,Active
+P0069,HUL Shampoo,Chocolate,HUL,938.5,SUP022,Active
+P0070,Britannia Butter,Grocery,ITC,496.01,SUP023,Active
+P0071,Dabur Juice,Snacks,ITC,1000.74,SUP013,Active
+P0072,P&G Cookies,Grocery,ITC,826.43,SUP001,Active
+P0073,Britannia Biscuits,Home Care,P&G,913.93,SUP011,Active
+P0074,Parle Bread,Snacks,Dabur,715.05,SUP029,Active
+P0075,Cadbury Rice,Frozen Food,P&G,509.43,SUP027,Active
+P0076,Britannia Biscuits,Snacks,Pepsi,46.39,SUP008,Active
+P0077,P&G Chocolate,Bakery,ITC,1330.34,SUP019,Active
+P0078,ITC Bread,Home Care,Nestle,229.88,SUP023,Active
+P0079,Cadbury Shampoo,Snacks,Pepsi,1208.12,SUP023,Active
+P0080,Parle Milk,Frozen Food,Nestle,1377.03,SUP004,Active
+P0081,Pepsi Bread,Frozen Food,Dabur,897.22,SUP025,Active
+P0082,P&G Butter,Home Care,Dabur,674.41,SUP006,Active
+P0083,Parle Rice,Snacks,Britannia,1151.06,SUP017,Active
+P0084,Nestle Rice,Bakery,Cadbury,1073.18,SUP008,Active
+P0085,HUL Soap,Frozen Food,Cadbury,216.18,SUP008,Active
+P0086,Pepsi Biscuits,Chocolate,ITC,617.32,SUP018,Active
+P0087,ITC Milk,Snacks,ITC,590.32,SUP025,Inactive
+P0088,Amul Cookies,Home Care,Parle,18.79,SUP012,Active
+P0089,ITC Shampoo,Frozen Food,Dabur,1201.8,SUP029,Active
+P0090,Parle Biscuits,Grocery,ITC,733.61,SUP013,Active
+P0091,ITC Juice,Bakery,Pepsi,1471.28,SUP018,Active
+P0092,ITC Cookies,Fruits & Vegetables,Amul,135.08,SUP014,Active
+P0093,Parle Juice,Dairy,Britannia,574.86,SUP007,Active
+P0094,HUL Soap,Home Care,Britannia,1130.49,SUP027,Active
+P0095,Britannia Chocolate,Bakery,Amul,1126.05,SUP002,Active
+P0096,Nestle Chocolate,Dairy,Amul,1424.92,SUP007,Active
+P0097,P&G Juice,Snacks,Pepsi,715.61,SUP004,Inactive
+P0098,Nestle Bread,Grocery,HUL,260.01,SUP020,Active
+P0099,Pepsi Rice,Chocolate,P&G,48.26,SUP010,Inactive
+P0100,ITC Shampoo,Snacks,Cadbury,892.23,SUP027,Active
+P0101,Cadbury Rice,Fruits & Vegetables,Cadbury,1196.38,SUP019,Active
+P0102,HUL Butter,Home Care,HUL,112.75,SUP021,Active
+P0103,Amul Shampoo,Bakery,Cadbury,655.95,SUP012,Active
+P0104,Pepsi Shampoo,Beverages,Dabur,1448.56,SUP009,Inactive
+P0105,Dabur Bread,Bakery,ITC,1240.34,SUP019,Active
+P0106,HUL Biscuits,Chocolate,Britannia,1323.63,SUP008,Active
+P0107,P&G Cookies,Home Care,HUL,52.76,SUP028,Active
+P0108,Pepsi Bread,Snacks,HUL,1198.77,SUP011,Active
+P0109,P&G Rice,Frozen Food,Amul,779.77,SUP007,Active
+P0110,Nestle Shampoo,Bakery,Dabur,1139.67,SUP023,Active
+P0111,Parle Bread,Dairy,Cadbury,448.41,SUP013,Active
+P0112,Britannia Cookies,Personal Care,Parle,834.67,SUP012,Active
+P0113,Dabur Soap,Personal Care,Parle,413.67,SUP009,Active
+P0114,Cadbury Biscuits,Personal Care,Cadbury,1116.89,SUP025,Active
+P0115,Nestle Biscuits,Bakery,Britannia,1089.63,SUP025,Active
+P0116,P&G Rice,Chocolate,Nestle,451.41,SUP012,Active
+P0117,Britannia Milk,Frozen Food,Pepsi,418.72,SUP002,Active
+P0118,Britannia Juice,Bakery,Cadbury,1310.35,SUP019,Active
+P0119,Parle Bread,Bakery,HUL,284.7,SUP002,Active
+P0120,Parle Chocolate,Chocolate,ITC,742.7,SUP019,Active
+P0121,Pepsi Juice,Fruits & Vegetables,Britannia,136.92,SUP008,Active
+P0122,Dabur Shampoo,Fruits & Vegetables,P&G,1188.2,SUP008,Active
+P0123,ITC Bread,Bakery,Britannia,1291.65,SUP014,Active
+P0124,P&G Cookies,Dairy,P&G,1440.56,SUP004,Active
+P0125,Nestle Rice,Chocolate,Pepsi,367.4,SUP018,Active
+P0126,Pepsi Milk,Home Care,Parle,1037.16,SUP016,Active
+P0127,Amul Biscuits,Grocery,Britannia,1057.45,SUP015,Active
+P0128,Nestle Rice,Fruits & Vegetables,Nestle,643.46,SUP018,Active
+P0129,Pepsi Rice,Beverages,Cadbury,98.86,SUP026,Active
+P0130,P&G Cookies,Grocery,Parle,195.29,SUP023,Active
+P0131,ITC Rice,Frozen Food,Dabur,745.75,SUP003,Inactive
+P0132,Amul Shampoo,Personal Care,P&G,383.05,SUP003,Active
+P0133,P&G Cookies,Dairy,Britannia,868.61,SUP025,Active
+P0134,Parle Butter,Bakery,Britannia,280.42,SUP019,Active
+P0135,Parle Chocolate,Bakery,HUL,618.44,SUP011,Active
+P0136,Pepsi Soap,Home Care,Parle,439.44,SUP013,Active
+P0137,Amul Bread,Chocolate,HUL,386.07,SUP004,Active
+P0138,Dabur Milk,Frozen Food,Parle,625.74,SUP007,Active
+P0139,HUL Cookies,Bakery,Parle,1142.39,SUP007,Active
+P0140,Dabur Juice,Grocery,Parle,1322.46,SUP016,Active
+P0141,Amul Cookies,Snacks,Pepsi,473.02,SUP001,Active
+P0142,ITC Chocolate,Snacks,Cadbury,697.56,SUP004,Active
+P0143,Parle Rice,Frozen Food,Britannia,629.08,SUP016,Active
+P0144,Nestle Bread,Frozen Food,Pepsi,581.54,SUP030,Inactive
+P0145,Dabur Juice,Chocolate,Britannia,1161.29,SUP028,Active
+P0146,HUL Butter,Grocery,Amul,431.43,SUP010,Inactive
+P0147,P&G Bread,Beverages,Parle,812.49,SUP012,Active
+P0148,Dabur Butter,Home Care,Parle,1399.95,SUP028,Active
+P0149,Nestle Cookies,Home Care,Nestle,1285.46,SUP014,Active
+P0150,HUL Bread,Home Care,ITC,1482.74,SUP026,Active
+P0151,Parle Milk,Beverages,Dabur,1448.38,SUP011,Active
+P0152,Parle Chocolate,Frozen Food,Parle,32.87,SUP005,Active
+P0153,Pepsi Chocolate,Bakery,Britannia,514.46,SUP023,Active
+P0154,Cadbury Soap,Frozen Food,ITC,1431.67,SUP021,Active
+P0155,Dabur Milk,Fruits & Vegetables,Cadbury,359.81,SUP022,Active
+P0156,Nestle Chocolate,Home Care,Cadbury,1142.95,SUP023,Active
+P0157,Parle Juice,Grocery,Amul,78.53,SUP026,Active
+P0158,Britannia Soap,Personal Care,ITC,226.9,SUP017,Active
+P0159,P&G Juice,Beverages,Pepsi,127.66,SUP028,Active
+P0160,P&G Biscuits,Bakery,P&G,223.25,SUP015,Active
+P0161,Parle Rice,Dairy,Parle,1352.8,SUP022,Active
+P0162,Pepsi Chocolate,Bakery,HUL,1481.6,SUP010,Active
+P0163,Britannia Bread,Grocery,Nestle,1499.07,SUP028,Active
+P0164,Cadbury Biscuits,Home Care,P&G,544.85,SUP010,Active
+P0165,Amul Shampoo,Grocery,Amul,853.23,SUP022,Active
+P0166,P&G Bread,Grocery,Nestle,914.53,SUP012,Active
+P0167,Nestle Cookies,Grocery,Pepsi,946.09,SUP029,Active
+P0168,Britannia Bread,Dairy,P&G,553.64,SUP005,Active
+P0169,Britannia Soap,Home Care,Pepsi,309.18,SUP026,Active
+P0170,HUL Butter,Frozen Food,Britannia,1247.4,SUP009,Active
+P0171,Britannia Soap,Chocolate,Parle,1444.71,SUP005,Active
+P0172,ITC Butter,Personal Care,Cadbury,1188.12,SUP001,Active
+P0173,Dabur Chocolate,Bakery,HUL,1012.51,SUP022,Active
+P0174,P&G Shampoo,Personal Care,Cadbury,1015.51,SUP016,Active
+P0175,P&G Butter,Personal Care,P&G,339.84,SUP003,Active
+P0176,Britannia Shampoo,Chocolate,Pepsi,77.57,SUP002,Active
+P0177,Parle Chocolate,Chocolate,Nestle,1332.02,SUP005,Active
+P0178,Parle Soap,Frozen Food,ITC,885.14,SUP024,Active
+P0179,ITC Chocolate,Bakery,P&G,618.09,SUP009,Active
+P0180,HUL Biscuits,Bakery,Parle,1426.33,SUP028,Active
+P0181,Cadbury Soap,Frozen Food,HUL,100.22,SUP009,Active
+P0182,Cadbury Bread,Chocolate,Nestle,966.14,SUP020,Active
+P0183,Amul Soap,Snacks,Pepsi,1182.6,SUP007,Active
+P0184,Dabur Biscuits,Fruits & Vegetables,Nestle,1221.45,SUP008,Active
+P0185,Pepsi Cookies,Dairy,Britannia,1289.03,SUP005,Active
+P0186,Dabur Rice,Beverages,Cadbury,994.98,SUP001,Active
+P0187,Amul Soap,Snacks,P&G,492.42,SUP006,Active
+P0188,Amul Juice,Home Care,Dabur,179.34,SUP003,Active
+P0189,Parle Soap,Frozen Food,P&G,172.49,SUP017,Active
+P0190,P&G Milk,Frozen Food,Britannia,692.48,SUP001,Active
+P0191,Parle Shampoo,Home Care,Cadbury,740.5,SUP030,Active
+P0192,Cadbury Chocolate,Personal Care,P&G,231.02,SUP005,Active
+P0193,P&G Cookies,Frozen Food,HUL,577.55,SUP020,Active
+P0194,Britannia Bread,Frozen Food,P&G,651.0,SUP026,Active
+P0195,Dabur Biscuits,Home Care,Parle,1333.26,SUP014,Active
+P0196,Parle Shampoo,Home Care,Cadbury,475.7,SUP011,Active
+P0197,HUL Juice,Bakery,Cadbury,145.92,SUP003,Active
+P0198,ITC Chocolate,Personal Care,Pepsi,838.99,SUP019,Active
+P0199,Dabur Soap,Chocolate,ITC,536.86,SUP022,Active
+P0200,Amul Rice,Fruits & Vegetables,Britannia,533.95,SUP019,Active
+P0201,Nestle Juice,Bakery,Nestle,1272.44,SUP012,Active
+P0202,HUL Chocolate,Grocery,P&G,346.98,SUP014,Active
+P0203,P&G Cookies,Frozen Food,Amul,917.4,SUP022,Active
+P0204,Amul Juice,Grocery,Britannia,1383.09,SUP012,Active
+P0205,Pepsi Juice,Fruits & Vegetables,ITC,113.68,SUP024,Active
+P0206,Cadbury Butter,Snacks,ITC,635.55,SUP011,Active
+P0207,HUL Rice,Personal Care,P&G,898.37,SUP029,Active
+P0208,Pepsi Juice,Fruits & Vegetables,Amul,1014.21,SUP009,Active
+P0209,ITC Bread,Fruits & Vegetables,Parle,627.13,SUP007,Active
+P0210,Cadbury Soap,Home Care,Cadbury,432.04,SUP022,Inactive
+P0211,Parle Butter,Grocery,Amul,338.57,SUP020,Active
+P0212,Amul Biscuits,Grocery,Nestle,1153.35,SUP025,Active
+P0213,Britannia Soap,Chocolate,Amul,751.1,SUP014,Active
+P0214,Pepsi Shampoo,Frozen Food,Nestle,755.39,SUP027,Active
+P0215,Cadbury Shampoo,Dairy,ITC,37.92,SUP030,Active
+P0216,HUL Cookies,Home Care,P&G,612.59,SUP021,Active
+P0217,Britannia Chocolate,Home Care,Amul,1449.64,SUP006,Inactive
+P0218,Parle Soap,Chocolate,ITC,1268.28,SUP008,Active
+P0219,P&G Shampoo,Frozen Food,Cadbury,599.69,SUP010,Active
+P0220,Nestle Soap,Beverages,Cadbury,770.62,SUP004,Active
+P0221,Dabur Biscuits,Personal Care,HUL,1093.79,SUP027,Active
+P0222,Nestle Chocolate,Beverages,Britannia,303.93,SUP020,Active
+P0223,Cadbury Juice,Bakery,Parle,1134.12,SUP025,Inactive
+P0224,Parle Cookies,Fruits & Vegetables,HUL,1297.73,SUP021,Active
+P0225,Pepsi Bread,Chocolate,Parle,668.89,SUP010,Active
+P0226,P&G Milk,Personal Care,Dabur,120.54,SUP015,Active
+P0227,Amul Milk,Personal Care,Britannia,124.33,SUP028,Active
+P0228,P&G Cookies,Frozen Food,ITC,699.44,SUP018,Active
+P0229,Parle Cookies,Snacks,HUL,911.46,SUP017,Active
+P0230,Amul Bread,Chocolate,HUL,1473.75,SUP003,Active
+P0231,Pepsi Milk,Snacks,Parle,1486.57,SUP017,Active
+P0232,P&G Juice,Personal Care,HUL,1377.73,SUP013,Active
+P0233,HUL Cookies,Dairy,HUL,108.21,SUP004,Active
+P0234,ITC Rice,Grocery,P&G,1311.19,SUP011,Active
+P0235,P&G Juice,Personal Care,Britannia,1451.87,SUP023,Active
+P0236,Pepsi Cookies,Chocolate,Britannia,842.79,SUP021,Active
+P0237,Pepsi Butter,Chocolate,ITC,767.65,SUP001,Active
+P0238,Britannia Juice,Snacks,HUL,1422.03,SUP016,Active
+P0239,Nestle Juice,Beverages,Cadbury,450.73,SUP026,Active
+P0240,Dabur Butter,Frozen Food,Amul,996.27,SUP029,Inactive
+P0241,Pepsi Cookies,Home Care,Pepsi,251.75,SUP027,Inactive
+P0242,Pepsi Bread,Dairy,ITC,552.81,SUP024,Active
+P0243,Parle Cookies,Grocery,Parle,358.66,SUP008,Active
+P0244,Parle Biscuits,Personal Care,P&G,1476.82,SUP015,Active
+P0245,ITC Butter,Frozen Food,ITC,1449.74,SUP027,Active
+P0246,P&G Juice,Grocery,Amul,965.36,SUP028,Active
+P0247,Dabur Chocolate,Frozen Food,Cadbury,434.74,SUP025,Active
+P0248,Britannia Bread,Frozen Food,Pepsi,1248.26,SUP003,Active
+P0249,Parle Soap,Dairy,ITC,89.35,SUP017,Active
+P0250,Nestle Shampoo,Chocolate,HUL,344.56,SUP011,Active
+P0251,HUL Juice,Beverages,Amul,437.45,SUP027,Active
+P0252,Pepsi Bread,Bakery,P&G,17.82,SUP003,Active
+P0253,Britannia Biscuits,Beverages,Dabur,1410.94,SUP020,Active
+P0254,ITC Chocolate,Grocery,Nestle,458.72,SUP002,Active
+P0255,ITC Cookies,Bakery,Cadbury,175.18,SUP029,Active
+P0256,P&G Butter,Dairy,Dabur,866.82,SUP023,Active
+P0257,Britannia Shampoo,Dairy,P&G,535.7,SUP019,Active
+P0258,Pepsi Chocolate,Frozen Food,HUL,110.84,SUP017,Active
+P0259,Dabur Butter,Frozen Food,Amul,591.78,SUP016,Active
+P0260,ITC Soap,Grocery,Amul,542.07,SUP003,Active
+P0261,Nestle Chocolate,Fruits & Vegetables,HUL,208.78,SUP012,Active
+P0262,HUL Juice,Bakery,Parle,951.29,SUP026,Active
+P0263,Cadbury Bread,Dairy,Britannia,310.37,SUP026,Active
+P0264,Amul Soap,Grocery,Dabur,603.35,SUP027,Active
+P0265,Parle Rice,Dairy,Nestle,436.31,SUP028,Active
+P0266,HUL Rice,Chocolate,HUL,661.06,SUP013,Active
+P0267,ITC Soap,Beverages,Parle,1041.18,SUP012,Active
+P0268,Britannia Chocolate,Home Care,Cadbury,651.6,SUP027,Active
+P0269,Dabur Rice,Personal Care,Cadbury,129.3,SUP022,Active
+P0270,Britannia Bread,Fruits & Vegetables,ITC,258.3,SUP015,Active
+P0271,Parle Milk,Personal Care,P&G,1497.24,SUP009,Active
+P0272,Cadbury Shampoo,Personal Care,Dabur,1203.63,SUP022,Active
+P0273,Amul Juice,Fruits & Vegetables,Parle,61.85,SUP003,Active
+P0274,HUL Soap,Home Care,P&G,58.25,SUP005,Active
+P0275,HUL Soap,Bakery,Cadbury,865.14,SUP017,Active
+P0276,ITC Soap,Grocery,Nestle,1441.17,SUP001,Active
+P0277,Parle Butter,Home Care,Dabur,185.46,SUP025,Active
+P0278,Parle Biscuits,Fruits & Vegetables,Britannia,1044.03,SUP016,Active
+P0279,Cadbury Juice,Chocolate,Parle,267.26,SUP023,Active
+P0280,Cadbury Soap,Personal Care,Cadbury,829.5,SUP010,Active
+P0281,Pepsi Juice,Personal Care,Dabur,344.12,SUP007,Active
+P0282,Nestle Bread,Dairy,HUL,835.49,SUP012,Active
+P0283,Dabur Juice,Fruits & Vegetables,Cadbury,107.96,SUP013,Active
+P0284,Dabur Shampoo,Home Care,P&G,119.89,SUP011,Active
+P0285,Parle Bread,Frozen Food,HUL,201.22,SUP027,Active
+P0286,P&G Juice,Beverages,ITC,759.27,SUP028,Active
+P0287,Cadbury Butter,Beverages,Britannia,255.34,SUP011,Active
+P0288,HUL Butter,Grocery,Cadbury,383.4,SUP021,Active
+P0289,Britannia Juice,Grocery,P&G,804.88,SUP017,Active
+P0290,P&G Cookies,Beverages,Pepsi,991.51,SUP024,Inactive
+P0291,HUL Cookies,Dairy,Amul,131.02,SUP021,Inactive
+P0292,Britannia Biscuits,Fruits & Vegetables,ITC,930.98,SUP001,Active
+P0293,Dabur Rice,Grocery,Parle,374.87,SUP026,Active
+P0294,Britannia Bread,Chocolate,Amul,245.54,SUP014,Active
+P0295,Parle Biscuits,Personal Care,P&G,224.07,SUP028,Active
+P0296,HUL Shampoo,Beverages,HUL,777.32,SUP004,Active
+P0297,Nestle Bread,Chocolate,Britannia,679.9,SUP005,Active
+P0298,Amul Rice,Home Care,P&G,633.02,SUP028,Active
+P0299,HUL Cookies,Personal Care,Nestle,1147.05,SUP016,Active
+P0300,Parle Bread,Grocery,Parle,44.53,SUP013,Active
+P0301,Parle Biscuits,Snacks,P&G,535.81,SUP002,Active
+P0302,Parle Cookies,Bakery,Britannia,809.67,SUP028,Active
+P0303,ITC Juice,Grocery,HUL,1148.15,SUP012,Active
+P0304,ITC Milk,Fruits & Vegetables,Dabur,300.04,SUP018,Active
+P0305,Cadbury Shampoo,Frozen Food,Parle,1148.96,SUP009,Inactive
+P0306,P&G Chocolate,Beverages,Cadbury,596.92,SUP026,Active
+P0307,Dabur Soap,Beverages,Nestle,907.67,SUP013,Active
+P0308,Amul Milk,Dairy,Pepsi,1073.25,SUP026,Active
+P0309,Dabur Bread,Beverages,P&G,1340.77,SUP005,Active
+P0310,P&G Soap,Beverages,ITC,1486.02,SUP024,Active
+P0311,P&G Soap,Frozen Food,Dabur,803.19,SUP023,Inactive
+P0312,Britannia Bread,Dairy,HUL,503.55,SUP004,Active
+P0313,P&G Rice,Dairy,P&G,717.14,SUP021,Inactive
+P0314,P&G Biscuits,Dairy,P&G,725.87,SUP017,Inactive
+P0315,ITC Juice,Snacks,Amul,863.13,SUP023,Active
+P0316,Nestle Milk,Bakery,HUL,633.98,SUP014,Active
+P0317,ITC Butter,Fruits & Vegetables,Parle,1310.5,SUP024,Active
+P0318,Pepsi Butter,Snacks,Dabur,494.32,SUP022,Active
+P0319,Dabur Shampoo,Personal Care,Pepsi,694.9,SUP018,Active
+P0320,Dabur Soap,Grocery,P&G,731.43,SUP008,Active
+P0321,Dabur Rice,Snacks,Britannia,1159.05,SUP023,Active
+P0322,Parle Soap,Bakery,HUL,845.13,SUP030,Active
+P0323,Britannia Chocolate,Fruits & Vegetables,Dabur,575.74,SUP013,Active
+P0324,Pepsi Rice,Dairy,Britannia,1433.42,SUP003,Active
+P0325,Parle Rice,Bakery,Nestle,311.08,SUP018,Active
+P0326,Dabur Rice,Beverages,Cadbury,927.36,SUP019,Active
+P0327,Nestle Milk,Frozen Food,Nestle,960.54,SUP002,Active
+P0328,ITC Soap,Bakery,Cadbury,1024.98,SUP005,Active
+P0329,Dabur Juice,Home Care,Parle,721.4,SUP007,Active
+P0330,HUL Rice,Dairy,Cadbury,981.93,SUP008,Active
+P0331,Amul Juice,Home Care,Pepsi,1401.54,SUP002,Active
+P0332,Parle Juice,Grocery,Amul,23.81,SUP019,Inactive
+P0333,Cadbury Soap,Grocery,Parle,1483.76,SUP018,Active
+P0334,Parle Juice,Frozen Food,Parle,416.53,SUP026,Active
+P0335,HUL Juice,Bakery,Britannia,1080.71,SUP001,Active
+P0336,Britannia Cookies,Snacks,Pepsi,920.32,SUP021,Active
+P0337,ITC Butter,Personal Care,Cadbury,607.24,SUP004,Active
+P0338,Pepsi Bread,Personal Care,Nestle,20.18,SUP013,Active
+P0339,Parle Rice,Personal Care,Britannia,877.87,SUP019,Active
+P0340,Britannia Soap,Snacks,Amul,1005.0,SUP015,Active
+,Missing ID Product,Grocery,ITC,100.0,SUP001,Active
+P0341,,Grocery,ITC,100.0,SUP002,Active
+P0342,Negative Price,Grocery,ITC,-50.0,SUP003,Active
+P0343,Zero Price,Dairy,Amul,0.0,SUP004,Active
+P0344,Duplicate Product,Snacks,Parle,80.0,SUP005,Active
+P0344,Duplicate Product Again,Snacks,Parle,90.0,SUP006,Active
+P0346,Missing Price,Beverages,Pepsi,,SUP007,Active
+P0347,Missing Supplier,Dairy,Amul,55.0,,Active
+P0348,Invalid Status,Dairy,Amul,55.0,SUP008,Unknown
+P0349,Whitespace Name,Dairy,Amul,60.0,SUP009,Active

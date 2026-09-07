@@ -1,0 +1,321 @@
+store_id,store_name,city,state,store_manager,opening_date,status
+S0001,Reliance Store 1,Jaipur,Rajasthan,Kavya Sharma,2022-05-22,Active
+S0002,Smart Store 2,Noida,Uttar Pradesh,Sneha Gupta,2022-10-05,Active
+S0003,FreshMart Store 3,Jaipur,Rajasthan,Riya Mehta,2024-02-09,Active
+S0004,DailyNeeds Store 4,Chennai,Tamil Nadu,Rahul Kumar,2022-08-31,Active
+S0005,FreshMart Store 5,Bengaluru,Karnataka,Nisha Gupta,2023-04-02,Active
+S0006,Reliance Store 6,Ahmedabad,Gujarat,Ishita Agarwal,2025-10-11,Active
+S0007,DailyNeeds Store 7,Mumbai,Maharashtra,Neha Bansal,2023-05-22,Active
+S0008,More Store 8,Jaipur,Rajasthan,Diya Bansal,2022-08-20,Active
+S0009,FreshMart Store 9,Ahmedabad,Gujarat,Simran Sharma,2023-05-08,Active
+S0010,Reliance Store 10,Ghaziabad,Uttar Pradesh,Simran Sharma,2024-07-03,Inactive
+S0011,Reliance Store 11,Chennai,Tamil Nadu,Ananya Sharma,2024-04-03,Active
+S0012,DailyNeeds Store 12,Gurugram,Haryana,Karan Sharma,2022-10-14,Active
+S0013,More Store 13,Lucknow,Uttar Pradesh,Nidhi Malhotra,2023-10-16,Inactive
+S0014,Smart Store 14,Hyderabad,Telangana,Ananya Singh,2022-10-21,Active
+S0015,FreshMart Store 15,Gurugram,Haryana,Ishita Singh,2022-05-05,Active
+S0016,More Store 16,Hyderabad,Telangana,Anjali Mehta,2025-02-12,Active
+S0017,Smart Store 17,Noida,Uttar Pradesh,Anjali Mehta,2024-12-10,Active
+S0018,FreshMart Store 18,Kolkata,West Bengal,Sneha Gupta,2023-09-07,Active
+S0019,DailyNeeds Store 19,Delhi,Delhi,Aditi Bansal,2023-04-07,Active
+S0020,More Store 20,Chandigarh,Chandigarh,Riya Sharma,2025-02-25,Active
+S0021,DailyNeeds Store 21,Mumbai,Maharashtra,Nisha Gupta,2024-03-06,Active
+S0022,More Store 22,Lucknow,Uttar Pradesh,Meera Verma,2024-07-10,Active
+S0023,DailyNeeds Store 23,Ghaziabad,Uttar Pradesh,Nidhi Bansal,2022-04-16,Active
+S0024,DailyNeeds Store 24,Mumbai,Maharashtra,Simran Sharma,2022-05-30,Active
+S0025,DailyNeeds Store 25,Ahmedabad,Gujarat,Nidhi Jain,2023-03-21,Active
+S0026,Smart Store 26,Gurugram,Haryana,Ishita Sharma,2023-03-10,Active
+S0027,Reliance Store 27,Kolkata,West Bengal,Nidhi Agarwal,2023-05-12,Inactive
+S0028,More Store 28,Kolkata,West Bengal,Neha Bansal,2025-02-04,Active
+S0029,Smart Store 29,Ahmedabad,Gujarat,Neha Agarwal,2024-12-28,Active
+S0030,Smart Store 30,Lucknow,Uttar Pradesh,Priya Jain,2024-10-15,Active
+S0031,FreshMart Store 31,Ghaziabad,Uttar Pradesh,Harshita Kumar,2023-02-21,Active
+S0032,FreshMart Store 32,Jaipur,Rajasthan,Vivaan Malhotra,2023-03-30,Active
+S0033,Smart Store 33,Noida,Uttar Pradesh,Kavya Malhotra,2025-04-01,Active
+S0034,More Store 34,Lucknow,Uttar Pradesh,Karan Kumar,2023-04-17,Active
+S0035,More Store 35,Hyderabad,Telangana,Aditi Jain,2025-09-02,Active
+S0036,FreshMart Store 36,Lucknow,Uttar Pradesh,Nidhi Agarwal,2024-08-01,Active
+S0037,Smart Store 37,Kolkata,West Bengal,Rohan Gupta,2025-01-24,Active
+S0038,DailyNeeds Store 38,Delhi,Delhi,Anjali Sharma,2024-12-09,Active
+S0039,Reliance Store 39,Chandigarh,Chandigarh,Harsh Sharma,2022-01-14,Active
+S0040,More Store 40,Delhi,Delhi,Aditya Gupta,2022-01-19,Active
+S0041,FreshMart Store 41,Bengaluru,Karnataka,Priya Sharma,2025-06-19,Inactive
+S0042,FreshMart Store 42,Indore,Madhya Pradesh,Harsh Agarwal,2022-02-02,Active
+S0043,DailyNeeds Store 43,Bengaluru,Karnataka,Sneha Sharma,2022-02-04,Active
+S0044,Smart Store 44,Kolkata,West Bengal,Kavya Singh,2022-02-05,Active
+S0045,FreshMart Store 45,Chandigarh,Chandigarh,Rohan Verma,2022-07-17,Active
+S0046,More Store 46,Delhi,Delhi,Karan Malhotra,2024-12-14,Active
+S0047,Smart Store 47,Chandigarh,Chandigarh,Diya Mehta,2022-06-11,Active
+S0048,FreshMart Store 48,Mumbai,Maharashtra,Pooja Bansal,2025-11-28,Active
+S0049,Reliance Store 49,Lucknow,Uttar Pradesh,Anjali Sharma,2022-07-11,Active
+S0050,FreshMart Store 50,Mumbai,Maharashtra,Kavya Agarwal,2022-04-25,Active
+S0051,More Store 51,Kolkata,West Bengal,Aditya Agarwal,2024-06-07,Active
+S0052,Reliance Store 52,Hyderabad,Telangana,Nisha Sharma,2023-04-16,Active
+S0053,DailyNeeds Store 53,Indore,Madhya Pradesh,Aditi Singh,2022-04-06,Active
+S0054,Smart Store 54,Chennai,Tamil Nadu,Kavya Malhotra,2025-09-09,Active
+S0055,Smart Store 55,Delhi,Delhi,Aarav Bansal,2025-04-17,Active
+S0056,FreshMart Store 56,Ahmedabad,Gujarat,Aditya Singh,2022-11-29,Inactive
+S0057,DailyNeeds Store 57,Gurugram,Haryana,Neha Jain,2023-11-11,Active
+S0058,More Store 58,Ahmedabad,Gujarat,Mehak Verma,2024-10-22,Active
+S0059,Reliance Store 59,Noida,Uttar Pradesh,Sneha Bansal,2022-06-05,Active
+S0060,DailyNeeds Store 60,Hyderabad,Telangana,Simran Mehta,2023-10-31,Active
+S0061,Smart Store 61,Chennai,Tamil Nadu,Riya Agarwal,2023-04-13,Active
+S0062,FreshMart Store 62,Bengaluru,Karnataka,Sneha Gupta,2025-10-24,Inactive
+S0063,FreshMart Store 63,Chennai,Tamil Nadu,Aditya Malhotra,2023-08-28,Active
+S0064,Reliance Store 64,Kolkata,West Bengal,Aditya Singh,2022-11-12,Active
+S0065,More Store 65,Kolkata,West Bengal,Nidhi Mehta,2023-10-11,Active
+S0066,Reliance Store 66,Ghaziabad,Uttar Pradesh,Aarav Singh,2024-06-29,Active
+S0067,Smart Store 67,Ahmedabad,Gujarat,Arjun Gupta,2022-06-28,Active
+S0068,FreshMart Store 68,Mumbai,Maharashtra,Kavya Jain,2024-11-15,Active
+S0069,Reliance Store 69,Ghaziabad,Uttar Pradesh,Aditya Kumar,2025-02-09,Active
+S0070,DailyNeeds Store 70,Hyderabad,Telangana,Meera Mehta,2022-01-26,Active
+S0071,FreshMart Store 71,Mumbai,Maharashtra,Harshita Verma,2025-02-19,Active
+S0072,DailyNeeds Store 72,Hyderabad,Telangana,Rohan Mehta,2022-12-14,Active
+S0073,Smart Store 73,Lucknow,Uttar Pradesh,Diya Agarwal,2022-10-26,Active
+S0074,FreshMart Store 74,Delhi,Delhi,Diya Mehta,2023-09-06,Active
+S0075,Reliance Store 75,Ahmedabad,Gujarat,Priya Singh,2023-05-21,Active
+S0076,DailyNeeds Store 76,Hyderabad,Telangana,Karan Agarwal,2022-08-08,Active
+S0077,Reliance Store 77,Lucknow,Uttar Pradesh,Neha Kumar,2025-06-24,Active
+S0078,Smart Store 78,Ahmedabad,Gujarat,Riya Kumar,2024-05-31,Inactive
+S0079,Smart Store 79,Delhi,Delhi,Meera Malhotra,2025-11-24,Active
+S0080,Smart Store 80,Pune,Maharashtra,Rohan Mehta,2023-10-16,Active
+S0081,FreshMart Store 81,Kolkata,West Bengal,Pooja Bansal,2023-10-30,Active
+S0082,FreshMart Store 82,Lucknow,Uttar Pradesh,Priya Verma,2025-02-28,Active
+S0083,DailyNeeds Store 83,Hyderabad,Telangana,Rohan Jain,2022-02-25,Active
+S0084,More Store 84,Kolkata,West Bengal,Riya Singh,2025-11-19,Active
+S0085,FreshMart Store 85,Chandigarh,Chandigarh,Harsh Agarwal,2022-10-13,Active
+S0086,Smart Store 86,Gurugram,Haryana,Harsh Gupta,2024-05-16,Active
+S0087,FreshMart Store 87,Ghaziabad,Uttar Pradesh,Simran Agarwal,2025-04-07,Active
+S0088,DailyNeeds Store 88,Bengaluru,Karnataka,Mehak Mehta,2025-01-18,Active
+S0089,Smart Store 89,Ahmedabad,Gujarat,Mehak Jain,2025-05-01,Active
+S0090,More Store 90,Ghaziabad,Uttar Pradesh,Harsh Kumar,2022-12-07,Inactive
+S0091,DailyNeeds Store 91,Noida,Uttar Pradesh,Anjali Mehta,2023-11-11,Active
+S0092,Reliance Store 92,Ghaziabad,Uttar Pradesh,Arjun Singh,2023-03-31,Active
+S0093,DailyNeeds Store 93,Kolkata,West Bengal,Kavya Malhotra,2025-11-09,Inactive
+S0094,FreshMart Store 94,Gurugram,Haryana,Priya Mehta,2024-08-06,Inactive
+S0095,DailyNeeds Store 95,Kolkata,West Bengal,Rahul Kumar,2022-02-20,Active
+S0096,Smart Store 96,Ghaziabad,Uttar Pradesh,Sneha Verma,2022-08-26,Active
+S0097,Smart Store 97,Jaipur,Rajasthan,Meera Agarwal,2023-02-28,Active
+S0098,Smart Store 98,Pune,Maharashtra,Aditi Verma,2024-06-16,Active
+S0099,Reliance Store 99,Jaipur,Rajasthan,Ishita Sharma,2025-12-26,Active
+S0100,Smart Store 100,Noida,Uttar Pradesh,Anjali Verma,2025-10-18,Active
+S0101,More Store 101,Indore,Madhya Pradesh,Nisha Gupta,2025-02-04,Active
+S0102,DailyNeeds Store 102,Jaipur,Rajasthan,Sneha Agarwal,2023-04-20,Active
+S0103,More Store 103,Chennai,Tamil Nadu,Rohan Mehta,2024-03-21,Active
+S0104,DailyNeeds Store 104,Kolkata,West Bengal,Karan Agarwal,2025-04-27,Active
+S0105,Reliance Store 105,Mumbai,Maharashtra,Mehak Bansal,2023-02-26,Active
+S0106,Reliance Store 106,Ahmedabad,Gujarat,Pooja Verma,2025-01-04,Active
+S0107,Smart Store 107,Jaipur,Rajasthan,Karan Agarwal,2022-08-22,Active
+S0108,FreshMart Store 108,Chennai,Tamil Nadu,Nisha Kumar,2025-05-07,Active
+S0109,FreshMart Store 109,Hyderabad,Telangana,Pooja Verma,2023-12-14,Active
+S0110,FreshMart Store 110,Chandigarh,Chandigarh,Simran Gupta,2025-10-11,Active
+S0111,DailyNeeds Store 111,Indore,Madhya Pradesh,Pooja Verma,2025-10-08,Active
+S0112,Reliance Store 112,Jaipur,Rajasthan,Ananya Singh,2022-08-28,Active
+S0113,More Store 113,Jaipur,Rajasthan,Nisha Mehta,2024-05-06,Inactive
+S0114,DailyNeeds Store 114,Delhi,Delhi,Neha Mehta,2023-01-16,Active
+S0115,DailyNeeds Store 115,Chennai,Tamil Nadu,Mehak Gupta,2025-02-10,Active
+S0116,Smart Store 116,Pune,Maharashtra,Rahul Gupta,2023-10-07,Active
+S0117,Reliance Store 117,Hyderabad,Telangana,Priya Sharma,2024-09-19,Active
+S0118,FreshMart Store 118,Gurugram,Haryana,Kavya Jain,2025-08-30,Active
+S0119,FreshMart Store 119,Mumbai,Maharashtra,Sneha Agarwal,2024-09-27,Active
+S0120,DailyNeeds Store 120,Ghaziabad,Uttar Pradesh,Aarav Bansal,2023-08-22,Active
+S0121,More Store 121,Lucknow,Uttar Pradesh,Kavya Singh,2022-12-11,Active
+S0122,FreshMart Store 122,Hyderabad,Telangana,Kavya Jain,2022-08-20,Inactive
+S0123,Smart Store 123,Ghaziabad,Uttar Pradesh,Harshita Jain,2024-01-22,Active
+S0124,Reliance Store 124,Chandigarh,Chandigarh,Harshita Agarwal,2025-01-23,Active
+S0125,Reliance Store 125,Mumbai,Maharashtra,Nidhi Bansal,2023-09-02,Active
+S0126,Smart Store 126,Pune,Maharashtra,Priya Verma,2024-06-18,Active
+S0127,More Store 127,Ahmedabad,Gujarat,Karan Malhotra,2025-11-12,Active
+S0128,DailyNeeds Store 128,Chandigarh,Chandigarh,Anjali Mehta,2022-12-06,Inactive
+S0129,More Store 129,Delhi,Delhi,Karan Sharma,2025-03-13,Active
+S0130,Smart Store 130,Bengaluru,Karnataka,Simran Jain,2022-12-11,Active
+S0131,Smart Store 131,Kolkata,West Bengal,Ishita Malhotra,2023-07-02,Active
+S0132,Reliance Store 132,Indore,Madhya Pradesh,Rahul Mehta,2022-05-02,Active
+S0133,More Store 133,Chandigarh,Chandigarh,Mehak Gupta,2023-05-27,Active
+S0134,Smart Store 134,Kolkata,West Bengal,Ananya Mehta,2024-09-29,Active
+S0135,Smart Store 135,Hyderabad,Telangana,Anjali Mehta,2024-02-08,Active
+S0136,Reliance Store 136,Ghaziabad,Uttar Pradesh,Neha Jain,2023-07-24,Active
+S0137,FreshMart Store 137,Pune,Maharashtra,Meera Malhotra,2022-01-06,Active
+S0138,FreshMart Store 138,Kolkata,West Bengal,Anjali Kumar,2022-05-10,Active
+S0139,More Store 139,Mumbai,Maharashtra,Sneha Bansal,2024-10-10,Active
+S0140,Smart Store 140,Jaipur,Rajasthan,Meera Jain,2025-03-29,Active
+S0141,FreshMart Store 141,Hyderabad,Telangana,Meera Sharma,2022-04-05,Active
+S0142,FreshMart Store 142,Chennai,Tamil Nadu,Aarav Verma,2022-11-20,Active
+S0143,Reliance Store 143,Pune,Maharashtra,Sneha Bansal,2025-11-11,Active
+S0144,Smart Store 144,Indore,Madhya Pradesh,Rohan Singh,2022-07-11,Active
+S0145,Reliance Store 145,Lucknow,Uttar Pradesh,Priya Gupta,2022-04-17,Active
+S0146,Smart Store 146,Chennai,Tamil Nadu,Nidhi Bansal,2024-05-29,Active
+S0147,Reliance Store 147,Kolkata,West Bengal,Aarav Bansal,2024-09-03,Active
+S0148,DailyNeeds Store 148,Delhi,Delhi,Ananya Jain,2025-10-24,Active
+S0149,Reliance Store 149,Noida,Uttar Pradesh,Mehak Kumar,2022-09-04,Active
+S0150,More Store 150,Kolkata,West Bengal,Aditi Verma,2023-04-14,Active
+S0151,Reliance Store 151,Ghaziabad,Uttar Pradesh,Arjun Kumar,2024-01-23,Active
+S0152,FreshMart Store 152,Delhi,Delhi,Harshita Gupta,2025-08-06,Active
+S0153,DailyNeeds Store 153,Ghaziabad,Uttar Pradesh,Pooja Sharma,2025-06-03,Active
+S0154,Smart Store 154,Pune,Maharashtra,Nidhi Bansal,2025-07-10,Active
+S0155,FreshMart Store 155,Indore,Madhya Pradesh,Simran Agarwal,2023-03-21,Active
+S0156,Reliance Store 156,Indore,Madhya Pradesh,Rahul Verma,2025-04-22,Active
+S0157,FreshMart Store 157,Jaipur,Rajasthan,Meera Gupta,2023-05-23,Active
+S0158,Reliance Store 158,Chennai,Tamil Nadu,Ananya Jain,2025-05-15,Inactive
+S0159,DailyNeeds Store 159,Kolkata,West Bengal,Ishita Sharma,2025-09-10,Active
+S0160,DailyNeeds Store 160,Gurugram,Haryana,Simran Jain,2023-01-22,Active
+S0161,Reliance Store 161,Lucknow,Uttar Pradesh,Ananya Agarwal,2024-03-01,Active
+S0162,FreshMart Store 162,Gurugram,Haryana,Anjali Malhotra,2022-05-26,Active
+S0163,Reliance Store 163,Indore,Madhya Pradesh,Priya Kumar,2022-09-28,Active
+S0164,DailyNeeds Store 164,Chandigarh,Chandigarh,Sneha Kumar,2025-01-23,Active
+S0165,FreshMart Store 165,Ahmedabad,Gujarat,Harshita Verma,2022-02-04,Inactive
+S0166,Reliance Store 166,Ghaziabad,Uttar Pradesh,Diya Bansal,2022-03-23,Active
+S0167,FreshMart Store 167,Ahmedabad,Gujarat,Nisha Singh,2025-07-11,Active
+S0168,FreshMart Store 168,Ahmedabad,Gujarat,Sneha Mehta,2022-06-18,Active
+S0169,DailyNeeds Store 169,Bengaluru,Karnataka,Rahul Singh,2022-06-21,Active
+S0170,DailyNeeds Store 170,Ghaziabad,Uttar Pradesh,Karan Gupta,2025-01-03,Active
+S0171,DailyNeeds Store 171,Mumbai,Maharashtra,Anjali Verma,2023-09-28,Active
+S0172,More Store 172,Kolkata,West Bengal,Vivaan Bansal,2022-06-26,Active
+S0173,FreshMart Store 173,Ghaziabad,Uttar Pradesh,Simran Malhotra,2022-04-23,Active
+S0174,More Store 174,Chennai,Tamil Nadu,Arjun Sharma,2025-12-20,Active
+S0175,Reliance Store 175,Kolkata,West Bengal,Rohan Agarwal,2023-12-12,Active
+S0176,Smart Store 176,Bengaluru,Karnataka,Rohan Kumar,2022-09-17,Active
+S0177,Reliance Store 177,Kolkata,West Bengal,Harshita Sharma,2023-11-18,Active
+S0178,DailyNeeds Store 178,Lucknow,Uttar Pradesh,Aditya Singh,2025-12-29,Inactive
+S0179,Reliance Store 179,Chennai,Tamil Nadu,Aditi Agarwal,2024-11-12,Active
+S0180,FreshMart Store 180,Noida,Uttar Pradesh,Pooja Gupta,2024-01-24,Active
+S0181,Reliance Store 181,Lucknow,Uttar Pradesh,Pooja Verma,2023-04-13,Active
+S0182,Reliance Store 182,Noida,Uttar Pradesh,Aarav Bansal,2022-04-05,Active
+S0183,FreshMart Store 183,Jaipur,Rajasthan,Rahul Gupta,2022-03-14,Active
+S0184,FreshMart Store 184,Ahmedabad,Gujarat,Ananya Kumar,2023-05-24,Active
+S0185,Smart Store 185,Indore,Madhya Pradesh,Diya Verma,2025-03-16,Active
+S0186,DailyNeeds Store 186,Ghaziabad,Uttar Pradesh,Harsh Sharma,2023-01-03,Active
+S0187,DailyNeeds Store 187,Ahmedabad,Gujarat,Vivaan Mehta,2022-05-22,Active
+S0188,Smart Store 188,Chandigarh,Chandigarh,Harshita Singh,2023-11-02,Active
+S0189,FreshMart Store 189,Bengaluru,Karnataka,Aarav Kumar,2023-02-15,Active
+S0190,Smart Store 190,Hyderabad,Telangana,Nidhi Malhotra,2023-05-12,Active
+S0191,DailyNeeds Store 191,Jaipur,Rajasthan,Aditi Bansal,2025-01-24,Active
+S0192,Reliance Store 192,Delhi,Delhi,Sneha Sharma,2023-04-23,Active
+S0193,Reliance Store 193,Jaipur,Rajasthan,Meera Sharma,2025-09-08,Active
+S0194,Smart Store 194,Chandigarh,Chandigarh,Arjun Bansal,2024-12-21,Active
+S0195,FreshMart Store 195,Mumbai,Maharashtra,Vivaan Gupta,2025-12-28,Active
+S0196,Reliance Store 196,Ghaziabad,Uttar Pradesh,Ananya Jain,2024-04-25,Active
+S0197,Reliance Store 197,Pune,Maharashtra,Pooja Verma,2024-11-01,Active
+S0198,FreshMart Store 198,Chennai,Tamil Nadu,Aditya Malhotra,2025-03-08,Active
+S0199,More Store 199,Mumbai,Maharashtra,Ananya Singh,2023-06-19,Active
+S0200,FreshMart Store 200,Indore,Madhya Pradesh,Mehak Kumar,2023-10-14,Active
+S0201,More Store 201,Lucknow,Uttar Pradesh,Aditya Bansal,2022-10-06,Inactive
+S0202,More Store 202,Ghaziabad,Uttar Pradesh,Arjun Gupta,2024-07-09,Active
+S0203,FreshMart Store 203,Jaipur,Rajasthan,Arjun Jain,2024-01-04,Active
+S0204,Smart Store 204,Pune,Maharashtra,Riya Singh,2022-09-03,Active
+S0205,Smart Store 205,Delhi,Delhi,Mehak Malhotra,2022-03-24,Active
+S0206,Smart Store 206,Chandigarh,Chandigarh,Rahul Verma,2025-12-27,Active
+S0207,FreshMart Store 207,Jaipur,Rajasthan,Nisha Sharma,2025-10-18,Active
+S0208,More Store 208,Lucknow,Uttar Pradesh,Aarav Mehta,2024-07-15,Active
+S0209,DailyNeeds Store 209,Kolkata,West Bengal,Ananya Verma,2024-08-04,Active
+S0210,More Store 210,Ahmedabad,Gujarat,Arjun Sharma,2022-05-07,Active
+S0211,More Store 211,Delhi,Delhi,Neha Kumar,2025-11-06,Active
+S0212,DailyNeeds Store 212,Hyderabad,Telangana,Diya Verma,2022-02-14,Active
+S0213,FreshMart Store 213,Gurugram,Haryana,Rahul Verma,2023-11-11,Active
+S0214,FreshMart Store 214,Noida,Uttar Pradesh,Vivaan Gupta,2025-03-21,Active
+S0215,FreshMart Store 215,Chandigarh,Chandigarh,Aditi Sharma,2024-02-23,Active
+S0216,Smart Store 216,Delhi,Delhi,Karan Gupta,2023-07-18,Active
+S0217,More Store 217,Pune,Maharashtra,Vivaan Malhotra,2025-06-22,Inactive
+S0218,Smart Store 218,Gurugram,Haryana,Aditi Mehta,2025-02-01,Active
+S0219,Reliance Store 219,Noida,Uttar Pradesh,Diya Mehta,2022-10-09,Active
+S0220,DailyNeeds Store 220,Gurugram,Haryana,Ananya Jain,2022-02-09,Active
+S0221,Smart Store 221,Ahmedabad,Gujarat,Aditi Jain,2024-09-19,Active
+S0222,DailyNeeds Store 222,Indore,Madhya Pradesh,Nisha Kumar,2024-03-06,Active
+S0223,Reliance Store 223,Delhi,Delhi,Meera Malhotra,2023-03-25,Active
+S0224,Smart Store 224,Indore,Madhya Pradesh,Vivaan Agarwal,2024-12-20,Active
+S0225,DailyNeeds Store 225,Ahmedabad,Gujarat,Ananya Gupta,2022-07-25,Active
+S0226,More Store 226,Chennai,Tamil Nadu,Diya Jain,2022-04-25,Active
+S0227,FreshMart Store 227,Hyderabad,Telangana,Priya Gupta,2022-12-27,Active
+S0228,Smart Store 228,Hyderabad,Telangana,Nidhi Kumar,2025-04-26,Active
+S0229,Smart Store 229,Kolkata,West Bengal,Pooja Malhotra,2022-10-19,Inactive
+S0230,FreshMart Store 230,Gurugram,Haryana,Kavya Singh,2022-12-26,Active
+S0231,Reliance Store 231,Noida,Uttar Pradesh,Vivaan Bansal,2025-05-17,Active
+S0232,DailyNeeds Store 232,Noida,Uttar Pradesh,Aditi Sharma,2023-11-11,Inactive
+S0233,More Store 233,Gurugram,Haryana,Meera Gupta,2023-10-25,Active
+S0234,More Store 234,Noida,Uttar Pradesh,Pooja Gupta,2022-08-16,Active
+S0235,Smart Store 235,Chandigarh,Chandigarh,Aditya Kumar,2025-12-13,Active
+S0236,Reliance Store 236,Hyderabad,Telangana,Meera Singh,2023-10-23,Active
+S0237,FreshMart Store 237,Delhi,Delhi,Anjali Agarwal,2025-08-22,Active
+S0238,DailyNeeds Store 238,Delhi,Delhi,Mehak Malhotra,2024-01-01,Active
+S0239,DailyNeeds Store 239,Chennai,Tamil Nadu,Rohan Mehta,2023-09-21,Active
+S0240,More Store 240,Delhi,Delhi,Nidhi Sharma,2025-12-08,Inactive
+S0241,DailyNeeds Store 241,Mumbai,Maharashtra,Vivaan Gupta,2025-05-18,Active
+S0242,DailyNeeds Store 242,Indore,Madhya Pradesh,Ananya Malhotra,2022-08-02,Active
+S0243,Smart Store 243,Delhi,Delhi,Nidhi Verma,2023-05-03,Active
+S0244,More Store 244,Jaipur,Rajasthan,Anjali Verma,2025-12-22,Active
+S0245,Reliance Store 245,Pune,Maharashtra,Diya Bansal,2023-05-27,Active
+S0246,Smart Store 246,Jaipur,Rajasthan,Arjun Sharma,2022-04-09,Active
+S0247,FreshMart Store 247,Pune,Maharashtra,Rohan Mehta,2024-10-06,Active
+S0248,DailyNeeds Store 248,Jaipur,Rajasthan,Neha Verma,2024-09-08,Inactive
+S0249,More Store 249,Chennai,Tamil Nadu,Rohan Agarwal,2022-05-31,Active
+S0250,Reliance Store 250,Lucknow,Uttar Pradesh,Meera Singh,2022-08-03,Active
+S0251,More Store 251,Jaipur,Rajasthan,Neha Gupta,2022-06-03,Active
+S0252,Reliance Store 252,Indore,Madhya Pradesh,Meera Malhotra,2025-06-10,Active
+S0253,Reliance Store 253,Kolkata,West Bengal,Sneha Gupta,2025-05-28,Active
+S0254,Reliance Store 254,Delhi,Delhi,Arjun Kumar,2023-02-25,Active
+S0255,DailyNeeds Store 255,Mumbai,Maharashtra,Nidhi Jain,2023-06-28,Active
+S0256,More Store 256,Lucknow,Uttar Pradesh,Arjun Sharma,2024-03-15,Inactive
+S0257,FreshMart Store 257,Bengaluru,Karnataka,Rahul Sharma,2024-01-09,Active
+S0258,Reliance Store 258,Mumbai,Maharashtra,Ishita Malhotra,2024-09-10,Active
+S0259,Reliance Store 259,Ghaziabad,Uttar Pradesh,Karan Gupta,2025-07-31,Active
+S0260,FreshMart Store 260,Ghaziabad,Uttar Pradesh,Arjun Singh,2024-03-25,Active
+S0261,Smart Store 261,Pune,Maharashtra,Aditya Jain,2024-03-04,Active
+S0262,FreshMart Store 262,Jaipur,Rajasthan,Priya Gupta,2024-07-01,Active
+S0263,FreshMart Store 263,Lucknow,Uttar Pradesh,Riya Singh,2023-04-09,Active
+S0264,Reliance Store 264,Hyderabad,Telangana,Rahul Verma,2022-06-25,Active
+S0265,DailyNeeds Store 265,Ahmedabad,Gujarat,Sneha Malhotra,2023-04-11,Active
+S0266,FreshMart Store 266,Noida,Uttar Pradesh,Nisha Mehta,2025-01-01,Active
+S0267,More Store 267,Hyderabad,Telangana,Aditi Singh,2022-06-11,Active
+S0268,Reliance Store 268,Indore,Madhya Pradesh,Nisha Malhotra,2024-11-24,Inactive
+S0269,DailyNeeds Store 269,Chennai,Tamil Nadu,Rahul Verma,2024-07-08,Active
+S0270,More Store 270,Delhi,Delhi,Karan Gupta,2022-03-29,Active
+S0271,FreshMart Store 271,Ghaziabad,Uttar Pradesh,Karan Gupta,2025-05-03,Active
+S0272,Reliance Store 272,Jaipur,Rajasthan,Aditya Mehta,2025-02-13,Active
+S0273,Smart Store 273,Bengaluru,Karnataka,Diya Jain,2024-07-27,Active
+S0274,DailyNeeds Store 274,Ahmedabad,Gujarat,Pooja Jain,2024-05-09,Active
+S0275,More Store 275,Mumbai,Maharashtra,Rahul Malhotra,2025-04-19,Inactive
+S0276,Reliance Store 276,Ahmedabad,Gujarat,Arjun Malhotra,2022-07-26,Active
+S0277,DailyNeeds Store 277,Chandigarh,Chandigarh,Priya Mehta,2023-06-25,Active
+S0278,FreshMart Store 278,Chennai,Tamil Nadu,Pooja Malhotra,2024-08-26,Active
+S0279,Smart Store 279,Delhi,Delhi,Neha Gupta,2025-06-20,Inactive
+S0280,FreshMart Store 280,Chennai,Tamil Nadu,Vivaan Mehta,2023-11-10,Active
+S0281,FreshMart Store 281,Noida,Uttar Pradesh,Diya Kumar,2022-02-11,Active
+S0282,Smart Store 282,Chandigarh,Chandigarh,Ishita Singh,2024-10-03,Active
+S0283,More Store 283,Chandigarh,Chandigarh,Rahul Singh,2024-06-26,Active
+S0284,FreshMart Store 284,Lucknow,Uttar Pradesh,Simran Verma,2023-01-20,Active
+S0285,FreshMart Store 285,Gurugram,Haryana,Nidhi Agarwal,2024-11-23,Active
+S0286,Reliance Store 286,Chandigarh,Chandigarh,Nisha Gupta,2022-05-15,Active
+S0287,DailyNeeds Store 287,Kolkata,West Bengal,Neha Gupta,2024-12-09,Inactive
+S0288,More Store 288,Noida,Uttar Pradesh,Karan Bansal,2022-04-29,Active
+S0289,FreshMart Store 289,Noida,Uttar Pradesh,Vivaan Kumar,2025-12-14,Active
+S0290,Smart Store 290,Lucknow,Uttar Pradesh,Riya Jain,2024-03-23,Active
+S0291,Reliance Store 291,Chennai,Tamil Nadu,Ananya Kumar,2024-09-28,Inactive
+S0292,More Store 292,Pune,Maharashtra,Aditi Malhotra,2025-02-03,Active
+S0293,More Store 293,Jaipur,Rajasthan,Diya Verma,2023-08-07,Active
+S0294,Reliance Store 294,Mumbai,Maharashtra,Rohan Malhotra,2023-03-15,Active
+S0295,More Store 295,Chennai,Tamil Nadu,Harsh Bansal,2023-07-06,Active
+S0296,Reliance Store 296,Bengaluru,Karnataka,Harshita Sharma,2024-08-28,Active
+S0297,More Store 297,Chennai,Tamil Nadu,Simran Sharma,2023-04-04,Active
+S0298,Smart Store 298,Hyderabad,Telangana,Mehak Singh,2024-05-17,Active
+S0299,Smart Store 299,Chandigarh,Chandigarh,Riya Singh,2023-03-23,Active
+S0300,DailyNeeds Store 300,Lucknow,Uttar Pradesh,Simran Mehta,2025-04-12,Active
+S0301,DailyNeeds Store 301,Noida,Uttar Pradesh,Harsh Kumar,2025-02-23,Inactive
+S0302,Smart Store 302,Hyderabad,Telangana,Ishita Verma,2024-09-13,Active
+S0303,Smart Store 303,Jaipur,Rajasthan,Anjali Kumar,2023-07-22,Active
+S0304,Smart Store 304,Chennai,Tamil Nadu,Karan Gupta,2024-11-25,Active
+S0305,Reliance Store 305,Indore,Madhya Pradesh,Simran Mehta,2025-09-14,Active
+S0306,More Store 306,Chennai,Tamil Nadu,Nidhi Sharma,2025-09-04,Active
+S0307,Smart Store 307,Lucknow,Uttar Pradesh,Sneha Mehta,2024-03-06,Active
+S0308,DailyNeeds Store 308,Hyderabad,Telangana,Karan Kumar,2025-12-31,Active
+S0309,DailyNeeds Store 309,Chennai,Tamil Nadu,Anjali Agarwal,2025-10-07,Active
+S0310,Smart Store 310,Bengaluru,Karnataka,Rohan Jain,2023-01-06,Active
+,Missing Store ID,Noida,Uttar Pradesh,Amit Sharma,2024-01-10,Active
+S0311,,Noida,Uttar Pradesh,Amit Sharma,2024-01-10,Active
+S0312,Missing City,,Uttar Pradesh,Amit Sharma,2024-01-10,Active
+S0313,Duplicate Store,Delhi,Delhi,Rahul Sharma,2024-01-10,Active
+S0313,Duplicate Store Again,Delhi,Delhi,Neha Sharma,2024-02-10,Active
+S0315,Invalid Date,Noida,Uttar Pradesh,Karan Singh,not-a-date,Active
+S0316,Invalid Status,Delhi,Delhi,Riya Gupta,2024-03-01,Unknown
+S0317,Missing Manager,Gurugram,Haryana,,2024-03-01,Active
+S0318,Missing State,Pune,,Mehak Jain,2024-03-01,Active
+S0319,Whitespace Name,Mumbai,Maharashtra,Pooja Mehta,2024-03-01,Active
