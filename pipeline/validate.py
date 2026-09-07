@@ -12,7 +12,7 @@ def validate_products(products_df):
         str_columns=["product_id","product_name","category","brand","supplier_id","status"]
         for column in str_columns:
             df=df.withColumn(column,trim(col(column)))
-        df=df.withColumn(column,to_number(col("unit_price")))
+        df=df.withColumn(column,(col("unit_price").cast("double")))
         validation_reason = (when( col("product_id").isNull(), lit("Product ID is Null") ).when( col("product_name").isNull() | (length(col("product_name")) == 0), lit("Product Name is Null/Empty") ).when( col("category").isNull() | (length(col("category")) == 0), lit("Category is Null/Empty") ).when( col("brand").isNull(), lit("Brand is Invalid") ).when( col("supplier_id").isNull(), lit("Supplier ID is Null/Empty") ).when( col("status").isNull(), lit("Status is Null") ).when( col("unit_price").isNull() | (col("unit_price")<=0), lit("Invalid Unit Price") ).otherwise( lit(None) ) )      
         df=df.withColumn("validation_reason",validation_reason)
         invalid_products_df=df.filter(col("validation_reason").isNotNull())
@@ -63,16 +63,16 @@ def validate_inventory(inventory_df):
         for column in string_columns:
             df=df.withColumn(column,trim(col(column)))
         for column in numeric_columns:
-            df=df.withColumn(column,to_number(col(column)))
+            df=df.withColumn(column,(col(column).cast("double")))
         df=df.withColumn("last_updated",to_date(col("last_updated"),"yyyy-MM-dd"))
-        validation_reason=(when(col("inventory_id").isNull(),lit("Inventory ID is Null")).when(col("product_id").isNull(),lit("Product ID is Null")).when(col("store_id").isNull(),lit("Store ID is Null")).when(col("available_quantity").isNull() or col("available_quantity")<0,lit("Available Quantity is Invalid")).when(col("last_updated").isNull(),lit("Last Updated Date is Null")).when(col("reorder_level").isNull() or col("reorder_level")<=0,lit("Reorder Level is Invalid")))
+        validation_reason=(when(col("inventory_id").isNull(),lit("Inventory ID is Null")).when(col("product_id").isNull(),lit("Product ID is Null")).when(col("store_id").isNull(),lit("Store ID is Null")).when(col("available_quantity").isNull() | col("available_quantity")<0,lit("Available Quantity is Invalid")).when(col("last_updated").isNull(),lit("Last Updated Date is Null")).when(col("reorder_level").isNull() or col("reorder_level")<=0,lit("Reorder Level is Invalid")).otherwise(lit(None)))
         df = df.withColumn( "validation_reason", validation_reason )
         invalid_inventory_df=df.filter(col("validation_reason").isNotNull())
         valid_inventory_df=df.filter(col("validation_reason").isNull()).drop("validation_reason")
         logger.info("Validation of Inventory Completed")
         logger.info(f"Accepted Records:{valid_inventory_df.count()}")
         logger.info(f"Rejected Records:{invalid_inventory_df.count()}")
-
+        return valid_inventory_df,invalid_inventory_df
     except Exception as e:
         logger.exception(f"Error in validating inventory:{str(e)}")
 def validate_sales(sales_df):
@@ -90,15 +90,15 @@ def validate_sales(sales_df):
             df=df.withColumn(column,trim(col(column)))
         for column in numeric_columns:
             df=df.withColumn(column,to_number(col(column)))
-        df=df.withColumn("sale_date",to_date(col("last_updated"),"yyyy-MM-dd"))
-        validation_reason=(when(col("sale_id").isNull(),lit("Sale ID is Null")).when(col("product_id").isNull(),lit("Product ID is Null")).when(col("store_id").isNull(),lit("Store ID is Null")).when(col("quantity").isNull() or col("quantity")<0,lit("Quantity is Invalid")).when(col("sale_date").isNull(),lit("Sale Date is Null")).when(col("customer_id").isNull(),lit("Customer ID is Invalid")).when(col("discount_percentage").isNull() | col("discount_percentage")<0,lit("Discount Percentage is Invalid")).when(col("payment_mode").isNull(),lit("Payment Mode is Null")))
+        df=df.withColumn("sale_date",to_date(col("sale_date"),"yyyy-MM-dd"))
+        validation_reason=(when(col("sale_id").isNull(),lit("Sale ID is Null")).when(col("product_id").isNull(),lit("Product ID is Null")).when(col("store_id").isNull(),lit("Store ID is Null")).when(col("quantity").isNull() or col("quantity")<0,lit("Quantity is Invalid")).when(col("sale_date").isNull(),lit("Sale Date is Null")).when(col("customer_id").isNull(),lit("Customer ID is Invalid")).when(col("discount_percentage").isNull() | col("discount_percentage")<0,lit("Discount Percentage is Invalid")).when(col("payment_mode").isNull(),lit("Payment Mode is Null")).otherwise(lit(None)))
         df = df.withColumn( "validation_reason", validation_reason )
         invalid_sale_df=df.filter(col("validation_reason").isNotNull())
         valid_sale_df=df.filter(col("validation_reason").isNull()).drop("validation_reason")
         logger.info("Validation of Sale Completed")
         logger.info(f"Accepted Records:{valid_sale_df.count()}")
         logger.info(f"Rejected Records:{invalid_sale_df.count()}")
-
+        return valid_sale_df,invalid_sale_df
     except Exception as e:
         logger.exception(f"Error in validating Sale:{str(e)}")            
 def validate_stores(stores_df):
@@ -114,14 +114,14 @@ def validate_stores(stores_df):
         for column in string_columns:
             df=df.withColumn(column,trim(col(column)))
         df=df.withColumn("opening_date",to_date(col("opening_date"),"yyyy-MM-dd"))
-        validation_reason=(when(col("store_id").isNull(),lit("Store ID is Null")).when(col("store_name").isNull(),lit("Store Name is Null")).when(col("city").isNull(),lit("City is Null")).when(col("state").isNull(),lit("State is Invalid")).when(col("store_manager").isNull(),lit("Store Manager is Null")).when(col("opening_date").isNull(),lit("Opening Date is Invalid")).when(col("status").isNull(),lit("State is Invalid")))
+        validation_reason=(when(col("store_id").isNull(),lit("Store ID is Null")).when(col("store_name").isNull(),lit("Store Name is Null")).when(col("city").isNull(),lit("City is Null")).when(col("state").isNull(),lit("State is Invalid")).when(col("store_manager").isNull(),lit("Store Manager is Null")).when(col("opening_date").isNull(),lit("Opening Date is Invalid")).when(col("status").isNull(),lit("State is Invalid")).otherwise(lit(None)))
         df = df.withColumn( "validation_reason", validation_reason )
         invalid_store_df=df.filter(col("validation_reason").isNotNull())
         valid_store_df=df.filter(col("validation_reason").isNull()).drop("validation_reason")
         logger.info("Validation of Store Completed")
         logger.info(f"Accepted Records:{valid_store_df.count()}")
         logger.info(f"Rejected Records:{invalid_store_df.count()}")
-
+        return valid_store_df,invalid_store_df
     except Exception as e:
         logger.exception(f"Error in validating Store:{str(e)}")      
             
