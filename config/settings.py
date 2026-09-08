@@ -9,7 +9,7 @@ os.makedirs(
 
 DB_HOST="localhost"
 DB_USERNAME="root"
-DB_PASSWORD=" "
+DB_PASSWORD="root"
 DB_PORT=3306
 DB_NAME="supply_chain_analytics"
 

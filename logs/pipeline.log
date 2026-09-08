@@ -1,0 +1,113 @@
+2026-09-08 10:52:51,556-INFO-Closing down clientserver connection
+2026-09-08 10:55:38,220-INFO-Closing down clientserver connection
+2026-09-08 11:05:59,696-INFO-Closing down clientserver connection
+2026-09-08 11:11:38,923-INFO-Closing down clientserver connection
+2026-09-08 11:23:35,049-INFO-Closing down clientserver connection
+2026-09-08 11:24:50,432-INFO-Closing down clientserver connection
+2026-09-08 11:30:21,733-INFO-Pipeline started - Run ID: 4538a0e4
+2026-09-08 11:30:21,734-INFO-Starting EXTRACT phase
+2026-09-08 11:30:21,734-INFO-Reading products csv
+2026-09-08 11:30:22,912-ERROR-Pipeline failed: [PATH_NOT_FOUND] Path does not exist: file:/C:/Users/o/supply-chain-analytics/PRODUCT_FILE. SQLSTATE: 42K03
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 42, in run_pipeline
+    products_df = extract_products()
+  File "C:\Users\o\supply-chain-analytics\pipeline\extract.py", line 28, in extract_products
+    products_df=spark.read.csv("PRODUCT_FILE")
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pyspark\sql\readwriter.py", line 896, in csv
+    return self._df(self._jreader.csv(self._spark._sc._jvm.PythonUtils.toSeq(path)))
+                    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\py4j\java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+        answer, self.gateway_client, self.target_id, self.name)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 257, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/C:/Users/o/supply-chain-analytics/PRODUCT_FILE. SQLSTATE: 42K03
+2026-09-08 11:30:22,919-ERROR-Pipeline failed: [PATH_NOT_FOUND] Path does not exist: file:/C:/Users/o/supply-chain-analytics/PRODUCT_FILE. SQLSTATE: 42K03
+2026-09-08 11:30:22,936-INFO-Closing down clientserver connection
+2026-09-08 11:40:22,819-INFO-Pipeline started - Run ID: f699104e
+2026-09-08 11:40:22,820-INFO-Starting EXTRACT phase
+2026-09-08 11:40:27,817-INFO-EXTRACT phase completed
+2026-09-08 11:40:27,818-INFO-Starting VALIDATE phase
+2026-09-08 11:40:27,818-INFO-Products Validation Started
+2026-09-08 11:40:27,852-ERROR-Error Validating Products:[CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 11:40:27,856-ERROR-Pipeline failed: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 98, in run_pipeline
+    validate_products(products_df)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 11:40:27,879-INFO-Closing down clientserver connection
+2026-09-08 11:43:58,897-INFO-Pipeline started - Run ID: d5694037
+2026-09-08 11:43:58,897-INFO-Starting EXTRACT phase
+2026-09-08 11:44:03,610-INFO-EXTRACT phase completed
+2026-09-08 11:44:03,611-INFO-Starting VALIDATE phase
+2026-09-08 11:44:03,611-INFO-Products Validation Started
+2026-09-08 11:44:03,647-ERROR-Error Validating Products:[CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 11:44:03,683-ERROR-Pipeline failed - Run ID: d5694037: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 97, in run_pipeline
+    valid_products_df, rejected_products_df = validate_products(
+                                              ~~~~~~~~~~~~~~~~~^
+        products_df
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 11:44:03,704-INFO-Closing down clientserver connection
+2026-09-08 11:46:34,188-INFO-Pipeline started - Run ID: 73e5cfa7
+2026-09-08 11:46:34,189-INFO-Starting EXTRACT phase
+2026-09-08 11:46:39,115-INFO-EXTRACT phase completed
+2026-09-08 11:46:39,115-INFO-Starting VALIDATE phase
+2026-09-08 11:46:39,138-INFO-VALIDATE phase completed
+2026-09-08 11:46:41,286-INFO-Products - Received: 350, Valid: 350, Rejected: 0
+2026-09-08 11:46:41,286-INFO-Customers - Received: 350, Valid: 350, Rejected: 0
+2026-09-08 11:46:41,286-INFO-Inventory - Received: 360, Valid: 360, Rejected: 0
+2026-09-08 11:46:41,286-INFO-Sales - Received: 400, Valid: 400, Rejected: 0
+2026-09-08 11:46:41,286-INFO-Stores - Received: 320, Valid: 320, Rejected: 0
+2026-09-08 11:46:41,288-INFO-Pipeline completed successfully - Run ID: 73e5cfa7
+2026-09-08 11:46:41,303-INFO-Closing down clientserver connection
+2026-09-08 11:47:37,078-INFO-Closing down clientserver connection
+2026-09-08 11:48:46,522-INFO-Pipeline started
+2026-09-08 11:48:46,523-INFO-Starting EXTRACT phase
+2026-09-08 11:48:51,569-INFO-EXTRACT phase completed
+2026-09-08 11:48:51,569-INFO-Starting VALIDATE phase
+2026-09-08 11:48:51,586-INFO-VALIDATE phase completed
+2026-09-08 11:48:53,777-INFO-Products - Received: 350, Valid: 350, Rejected: 0
+2026-09-08 11:48:53,777-INFO-Customers - Received: 350, Valid: 350, Rejected: 0
+2026-09-08 11:48:53,777-INFO-Inventory - Received: 360, Valid: 360, Rejected: 0
+2026-09-08 11:48:53,777-INFO-Sales - Received: 400, Valid: 400, Rejected: 0
+2026-09-08 11:48:53,778-INFO-Stores - Received: 320, Valid: 320, Rejected: 0
+2026-09-08 11:48:53,779-INFO-Pipeline completed successfully
+2026-09-08 11:48:53,803-INFO-Closing down clientserver connection
