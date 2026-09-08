@@ -1,27 +1,32 @@
 from database.database_connection import sessionLocal
 
-from models.product import Product
-from models.customer import Customer
-from models.warehouse import Warehouse
-from models.order import Order
-from models.shipment import Shipment
+from models.customers import Customer
+from models.inventory import Inventory
+from models.products import Product
+from models.sales import Sale
+from models.stores import Store
 
-from logging_config import pipeline_logger, database_error_logger
-
-from pyspark.sql import DataFrame
+from logger_config import logger
 
 
-def load_products(products_df: DataFrame):
+def load_product(product_df):
+
+    logger.info("Loading products")
+
     session = sessionLocal()
 
     try:
-        for row in products_df.toLocalIterator():
+
+        for row in product_df.toLocalIterator():
 
             product_id = str(row["product_id"])
 
-            existing_product = session.get(Product, product_id)
+            existing = session.get(
+                Product,
+                product_id
+            )
 
-            if existing_product is None:
+            if existing is None:
 
                 product = Product(
                     product_id=product_id,
@@ -29,8 +34,7 @@ def load_products(products_df: DataFrame):
                     category=row["category"],
                     brand=str(row["brand"]),
                     unit_price=float(row["unit_price"]),
-                    supplier_name=str(row["supplier_name"]),
-                    reorder_level=int(row["reorder_level"]),
+                    supplier_id=str(row["supplier_id"]),
                     status=str(row["status"])
                 )
 
@@ -38,39 +42,41 @@ def load_products(products_df: DataFrame):
 
         session.commit()
 
-        pipeline_logger.info("Products loaded successfully")
+        logger.info("Products loaded successfully")
 
     except Exception as e:
+
         session.rollback()
 
-        database_error_logger.error(
-            f"Product Loading Error: {e}"
-        )
-
-        pipeline_logger.exception(
-            f"Product Loading Error: {e}"
+        logger.error(
+            f"Product loading failed: {e}"
         )
 
         raise
 
     finally:
+
         session.close()
 
 
-def load_customers(customers_df: DataFrame):
+def load_customer(customer_df):
+
+    logger.info("Loading customers")
+
     session = sessionLocal()
 
     try:
-        for row in customers_df.toLocalIterator():
+
+        for row in customer_df.toLocalIterator():
 
             customer_id = str(row["customer_id"])
 
-            existing_customer = session.get(
+            existing = session.get(
                 Customer,
                 customer_id
             )
 
-            if existing_customer is None:
+            if existing is None:
 
                 customer = Customer(
                     customer_id=customer_id,
@@ -78,7 +84,6 @@ def load_customers(customers_df: DataFrame):
                     email=str(row["email"]),
                     mobile=str(row["mobile"]),
                     city=str(row["city"]),
-                    state=str(row["state"]),
                     registration_date=row["registration_date"],
                     customer_type=str(row["customer_type"])
                 )
@@ -87,212 +92,169 @@ def load_customers(customers_df: DataFrame):
 
         session.commit()
 
-        pipeline_logger.info(
-            "Customers loaded successfully"
-        )
+        logger.info("Customers loaded successfully")
 
     except Exception as e:
+
         session.rollback()
 
-        database_error_logger.error(
-            f"Customer Loading Error: {e}"
-        )
-
-        pipeline_logger.exception(
-            f"Customer Loading Error: {e}"
+        logger.error(
+            f"Customer loading failed: {e}"
         )
 
         raise
 
     finally:
+
         session.close()
 
+def load_store(store_df):
 
-def load_warehouses(warehouses_df: DataFrame):
+    logger.info("Loading stores")
+
     session = sessionLocal()
 
     try:
-        for row in warehouses_df.toLocalIterator():
 
-            warehouse_id = str(row["warehouse_id"])
+        for row in store_df.toLocalIterator():
 
-            existing_warehouse = session.get(
-                Warehouse,
-                warehouse_id
+            store_id = str(row["store_id"])
+
+            existing = session.get(
+                Store,
+                store_id
             )
 
-            if existing_warehouse is None:
+            if existing is None:
 
-                warehouse = Warehouse(
-                    warehouse_id=warehouse_id,
-                    warehouse_name=row["warehouse_name"],
+                store = Store(
+                    store_id=store_id,
+                    store_name=row["store_name"],
                     city=str(row["city"]),
                     state=str(row["state"]),
-                    manager_name=str(row["manager_name"]),
-                    capacity=int(row["capacity"]),
-                    available_capacity=int(
-                        row["available_capacity"]
-                    ),
+                    store_manager=str(row["store_manager"]),
+                    opening_date=row["opening_date"],
                     status=str(row["status"])
                 )
 
-                session.add(warehouse)
+                session.add(store)
 
         session.commit()
 
-        pipeline_logger.info(
-            "Warehouses loaded successfully"
-        )
+        logger.info("Stores loaded successfully")
 
     except Exception as e:
+
         session.rollback()
 
-        database_error_logger.error(
-            f"Warehouse Loading Error: {e}"
-        )
-
-        pipeline_logger.exception(
-            f"Warehouse Loading Error: {e}"
+        logger.error(
+            f"Store loading failed: {e}"
         )
 
         raise
 
     finally:
+
         session.close()
 
 
-def load_orders(orders_df: DataFrame):
+def load_inventory(inventory_df):
+
+    logger.info("Loading inventory")
+
     session = sessionLocal()
 
     try:
-        for row in orders_df.toLocalIterator():
 
-            order_id = str(row["order_id"])
+        for row in inventory_df.toLocalIterator():
 
-            existing_order = session.get(
-                Order,
-                order_id
+            inventory_id = str(row["inventory_id"])
+
+            existing = session.get(
+                Inventory,
+                inventory_id
             )
 
-            if existing_order is None:
+            if existing is None:
 
-                order = Order(
-                    order_id=order_id,
-                    customer_id=str(row["customer_id"]),
+                inventory = Inventory(
+                    inventory_id=inventory_id,
                     product_id=str(row["product_id"]),
-                    warehouse_id=str(row["warehouse_id"]),
+                    store_id=str(row["store_id"]),
+                    available_quantity=int(row["available_quantity"]),
+                    reorder_level=int(row["reorder_level"]),
+                    last_updated=row["last_updated"]
+                )
+
+                session.add(inventory)
+
+        session.commit()
+
+        logger.info("Inventory loaded successfully")
+
+    except Exception as e:
+
+        session.rollback()
+
+        logger.error(
+            f"Inventory loading failed: {e}"
+        )
+
+        raise
+
+    finally:
+
+        session.close()
+
+
+def load_sales(sales_df):
+
+    logger.info("Loading sales")
+
+    session = sessionLocal()
+
+    try:
+
+        for row in sales_df.toLocalIterator():
+
+            sale_id = str(row["sale_id"])
+
+            existing = session.get(
+                Sale,
+                sale_id
+            )
+
+            if existing is None:
+
+                sale = Sale(
+                    sale_id=sale_id,
+                    product_id=str(row["product_id"]),
+                    store_id=str(row["store_id"]),
+                    customer_id=str(row["customer_id"]),
                     quantity=int(row["quantity"]),
-                    unit_price=float(row["unit_price"]),
-                    discount_percentage=float(
+                    sale_date=row["sale_date"],
+                    discount_percentage=int(
                         row["discount_percentage"]
                     ),
-                    order_date=row["order_date"],
-                    payment_mode=str(row["payment_mode"]),
-                    order_status=str(row["order_status"]),
-                    gross_amount=float(row["gross_amount"]),
-                    discount_amount=float(
-                        row["discount_amount"]
-                    ),
-                    net_amount=float(row["net_amount"]),
-                    order_value_category=str(
-                        row["order_value_category"]
-                    )
+                    payment_mode=str(row["payment_mode"])
                 )
 
-                session.add(order)
+                session.add(sale)
 
         session.commit()
 
-        pipeline_logger.info(
-            "Orders loaded successfully"
-        )
+        logger.info("Sales loaded successfully")
 
     except Exception as e:
+
         session.rollback()
 
-        database_error_logger.error(
-            f"Order Loading Error: {e}"
-        )
-
-        pipeline_logger.exception(
-            f"Order Loading Error: {e}"
+        logger.error(
+            f"Sales loading failed: {e}"
         )
 
         raise
 
     finally:
-        session.close()
 
-
-def load_shipments(shipments_df: DataFrame):
-    session = sessionLocal()
-
-    try:
-        for row in shipments_df.toLocalIterator():
-
-            shipment_id = str(row["shipment_id"])
-
-            existing_shipment = session.get(
-                Shipment,
-                shipment_id
-            )
-
-            if existing_shipment is None:
-
-                actual_date = row["actual_delivery_date"]
-
-                delivery_days_val = row["delivery_days"]
-
-                shipment = Shipment(
-                    shipment_id=shipment_id,
-                    order_id=str(row["order_id"]),
-                    logistics_partner=str(
-                        row["logistics_partner"]
-                    ),
-                    shipment_date=row["shipment_date"],
-                    expected_delivery_date=row[
-                        "expected_delivery_date"
-                    ],
-                    actual_delivery_date=actual_date,
-                    delivery_status=str(
-                        row["delivery_status"]
-                    ),
-                    shipping_cost=float(
-                        row["shipping_cost"]
-                    ),
-                    destination_city=str(
-                        row["destination_city"]
-                    ),
-                    delivery_days=(
-                        int(delivery_days_val)
-                        if delivery_days_val is not None
-                        else None
-                    ),
-                    delivery_performance=str(
-                        row["delivery_performance"]
-                    )
-                )
-
-                session.add(shipment)
-
-        session.commit()
-
-        pipeline_logger.info(
-            "Shipments loaded successfully"
-        )
-
-    except Exception as e:
-        session.rollback()
-
-        database_error_logger.error(
-            f"Shipment Loading Error: {e}"
-        )
-
-        pipeline_logger.exception(
-            f"Shipment Loading Error: {e}"
-        )
-
-        raise
-
-    finally:
         session.close()

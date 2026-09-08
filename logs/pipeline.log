@@ -111,3 +111,3089 @@ pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BO
 2026-09-08 11:48:53,778-INFO-Stores - Received: 320, Valid: 320, Rejected: 0
 2026-09-08 11:48:53,779-INFO-Pipeline completed successfully
 2026-09-08 11:48:53,803-INFO-Closing down clientserver connection
+2026-09-08 14:25:32,351-INFO-Closing down clientserver connection
+2026-09-08 14:29:52,289-INFO-Closing down clientserver connection
+2026-09-08 14:36:32,178-INFO-Pipeline started
+2026-09-08 14:36:32,178-INFO-Starting EXTRACT phase
+2026-09-08 14:36:32,179-INFO-Reading products CSV
+2026-09-08 14:36:36,120-INFO-Reading customers CSV
+2026-09-08 14:36:36,446-INFO-Reading inventory CSV
+2026-09-08 14:36:36,709-INFO-Reading sales CSV
+2026-09-08 14:36:37,027-INFO-Reading stores CSV
+2026-09-08 14:36:37,288-INFO-Data extraction completed
+2026-09-08 14:36:37,288-INFO-Starting VALIDATE phase
+2026-09-08 14:36:37,288-INFO-Products Validation Started
+2026-09-08 14:36:37,330-ERROR-Error Validating Products:[CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 14:36:37,372-ERROR-Pipeline failed: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 62, in run_pipeline
+    validate_products(product_df)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 14:36:37,394-INFO-Closing down clientserver connection
+2026-09-08 14:42:44,527-INFO-Pipeline started
+2026-09-08 14:42:44,529-INFO-Starting EXTRACT phase
+2026-09-08 14:42:44,529-INFO-Reading products CSV
+2026-09-08 14:42:48,646-INFO-Reading customers CSV
+2026-09-08 14:42:48,967-INFO-Reading inventory CSV
+2026-09-08 14:42:49,265-INFO-Reading sales CSV
+2026-09-08 14:42:49,529-INFO-Reading stores CSV
+2026-09-08 14:42:49,776-INFO-Data extraction completed
+2026-09-08 14:42:49,777-INFO-Starting VALIDATE phase
+2026-09-08 14:42:49,777-INFO-Products Validation Started
+2026-09-08 14:42:49,837-ERROR-Error Validating Products:[CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 14:42:49,843-ERROR-Pipeline failed: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 62, in run_pipeline
+    validate_products(product_df)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 8, in validate_products
+    if column not in products_df]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\classic\column.py", line 653, in __nonzero__
+    raise PySparkValueError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkValueError: [CANNOT_CONVERT_COLUMN_INTO_BOOL] Cannot convert column into bool: please use '&' for 'and', '|' for 'or', '~' for 'not' when building DataFrame boolean expressions.
+2026-09-08 14:42:49,867-INFO-Closing down clientserver connection
+2026-09-08 14:46:27,049-INFO-Pipeline started
+2026-09-08 14:46:27,049-INFO-Starting EXTRACT phase
+2026-09-08 14:46:27,049-INFO-Reading products CSV
+2026-09-08 14:46:29,819-INFO-Reading customers CSV
+2026-09-08 14:46:30,112-INFO-Reading inventory CSV
+2026-09-08 14:46:30,399-INFO-Reading sales CSV
+2026-09-08 14:46:30,666-INFO-Reading stores CSV
+2026-09-08 14:46:30,950-INFO-Data extraction completed
+2026-09-08 14:46:30,951-INFO-Starting VALIDATE phase
+2026-09-08 14:46:30,951-INFO-Products Validation Started
+2026-09-08 14:46:31,398-INFO-Validation of Products completed
+2026-09-08 14:46:32,395-INFO-Accepted Records: 344
+2026-09-08 14:46:32,747-INFO-Rejected Records: 6
+2026-09-08 14:46:32,747-INFO-Validate Customers Started
+2026-09-08 14:46:33,499-ERROR-Error in validating Customers: [CANNOT_PARSE_TIMESTAMP] Text 'wrong-date' could not be parsed at index 0. Use `try_to_date` to tolerate invalid input string and return NULL instead. SQLSTATE: 22007
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 262, in validate_customers
+    accepted_count = valid_customer_df.count()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\classic\dataframe.py", line 499, in count
+    return int(self._jdf.count())
+               ~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\py4j\java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+        answer, self.gateway_client, self.target_id, self.name)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 257, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.DateTimeException: [CANNOT_PARSE_TIMESTAMP] Text 'wrong-date' could not be parsed at index 0. Use `try_to_date` to tolerate invalid input string and return NULL instead. SQLSTATE: 22007
+2026-09-08 14:46:33,592-ERROR-Pipeline failed: [CANNOT_PARSE_TIMESTAMP] Text 'wrong-date' could not be parsed at index 0. Use `try_to_date` to tolerate invalid input string and return NULL instead. SQLSTATE: 22007
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 66, in run_pipeline
+    validate_customers(customer_df)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 262, in validate_customers
+    accepted_count = valid_customer_df.count()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\classic\dataframe.py", line 499, in count
+    return int(self._jdf.count())
+               ~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\py4j\java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+        answer, self.gateway_client, self.target_id, self.name)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 257, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.DateTimeException: [CANNOT_PARSE_TIMESTAMP] Text 'wrong-date' could not be parsed at index 0. Use `try_to_date` to tolerate invalid input string and return NULL instead. SQLSTATE: 22007
+2026-09-08 14:46:33,612-INFO-Closing down clientserver connection
+2026-09-08 14:47:47,621-INFO-Pipeline started
+2026-09-08 14:47:47,621-INFO-Starting EXTRACT phase
+2026-09-08 14:47:47,621-INFO-Reading products CSV
+2026-09-08 14:47:50,233-INFO-Reading customers CSV
+2026-09-08 14:47:50,539-INFO-Reading inventory CSV
+2026-09-08 14:47:50,774-INFO-Reading sales CSV
+2026-09-08 14:47:51,049-INFO-Reading stores CSV
+2026-09-08 14:47:51,255-INFO-Data extraction completed
+2026-09-08 14:47:51,255-INFO-Starting VALIDATE phase
+2026-09-08 14:47:51,255-INFO-Products Validation Started
+2026-09-08 14:47:51,681-INFO-Validation of Products completed
+2026-09-08 14:47:52,353-INFO-Accepted Records: 344
+2026-09-08 14:47:52,680-INFO-Rejected Records: 6
+2026-09-08 14:47:52,680-INFO-Validate Customers Started
+2026-09-08 14:47:52,793-ERROR-Error in validating Customers: name 'to_date' is not defined
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 194, in validate_customers
+    to_date(
+    ^^^^^^^
+NameError: name 'to_date' is not defined
+2026-09-08 14:47:52,798-ERROR-Pipeline failed: name 'to_date' is not defined
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 66, in run_pipeline
+    validate_customers(customer_df)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 194, in validate_customers
+    to_date(
+    ^^^^^^^
+NameError: name 'to_date' is not defined
+2026-09-08 14:47:52,831-INFO-Closing down clientserver connection
+2026-09-08 14:49:31,870-INFO-Pipeline started
+2026-09-08 14:49:31,870-INFO-Starting EXTRACT phase
+2026-09-08 14:49:31,870-INFO-Reading products CSV
+2026-09-08 14:49:35,286-INFO-Reading customers CSV
+2026-09-08 14:49:35,579-INFO-Reading inventory CSV
+2026-09-08 14:49:35,894-INFO-Reading sales CSV
+2026-09-08 14:49:36,240-INFO-Reading stores CSV
+2026-09-08 14:49:36,527-INFO-Data extraction completed
+2026-09-08 14:49:36,527-INFO-Starting VALIDATE phase
+2026-09-08 14:49:36,527-INFO-Products Validation Started
+2026-09-08 14:49:36,947-INFO-Validation of Products completed
+2026-09-08 14:49:37,593-INFO-Accepted Records: 344
+2026-09-08 14:49:37,787-INFO-Rejected Records: 6
+2026-09-08 14:49:37,788-INFO-Validate Customers Started
+2026-09-08 14:49:38,531-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 14:49:38,532-INFO-Inventroy Validation Started
+2026-09-08 14:49:38,648-INFO-Validation of Inventory Completed
+2026-09-08 14:49:38,874-INFO-Accepted Records: 350
+2026-09-08 14:49:39,042-INFO-Rejected Records: 10
+2026-09-08 14:49:39,043-INFO-Sales Validation Started
+2026-09-08 14:49:39,095-ERROR-Error in validating Sale: to_number() missing 1 required positional argument: 'format'
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 467, in validate_sales
+    to_number(col(column))
+    ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\utils.py", line 283, in wrapped
+    return f(*args, **kwargs)
+TypeError: to_number() missing 1 required positional argument: 'format'
+2026-09-08 14:49:39,125-ERROR-Pipeline failed: to_number() missing 1 required positional argument: 'format'
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 74, in run_pipeline
+    validate_sales(sales_df)
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 467, in validate_sales
+    to_number(col(column))
+    ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyspark\sql\utils.py", line 283, in wrapped
+    return f(*args, **kwargs)
+TypeError: to_number() missing 1 required positional argument: 'format'
+2026-09-08 14:49:39,147-INFO-Closing down clientserver connection
+2026-09-08 14:51:08,780-INFO-Pipeline started
+2026-09-08 14:51:08,780-INFO-Starting EXTRACT phase
+2026-09-08 14:51:08,780-INFO-Reading products CSV
+2026-09-08 14:51:12,158-INFO-Reading customers CSV
+2026-09-08 14:51:12,594-INFO-Reading inventory CSV
+2026-09-08 14:51:12,979-INFO-Reading sales CSV
+2026-09-08 14:51:13,407-INFO-Reading stores CSV
+2026-09-08 14:51:13,773-INFO-Data extraction completed
+2026-09-08 14:51:13,773-INFO-Starting VALIDATE phase
+2026-09-08 14:51:13,773-INFO-Products Validation Started
+2026-09-08 14:51:14,463-INFO-Validation of Products completed
+2026-09-08 14:51:15,503-INFO-Accepted Records: 344
+2026-09-08 14:51:15,841-INFO-Rejected Records: 6
+2026-09-08 14:51:15,841-INFO-Validate Customers Started
+2026-09-08 14:51:16,730-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 14:51:16,730-INFO-Inventroy Validation Started
+2026-09-08 14:51:16,843-INFO-Validation of Inventory Completed
+2026-09-08 14:51:17,028-INFO-Accepted Records: 350
+2026-09-08 14:51:17,262-INFO-Rejected Records: 10
+2026-09-08 14:51:17,262-INFO-Sales Validation Started
+2026-09-08 14:51:17,441-INFO-Validation of Sale Completed
+2026-09-08 14:51:17,603-INFO-Accepted Records: 392
+2026-09-08 14:51:17,790-INFO-Rejected Records: 8
+2026-09-08 14:51:17,790-INFO-Stores Validation Started
+2026-09-08 14:51:17,882-INFO-Validation of Store Completed
+2026-09-08 14:51:18,012-INFO-Accepted Records: 314
+2026-09-08 14:51:18,131-INFO-Rejected Records: 6
+2026-09-08 14:51:18,132-INFO-Data validation completed
+2026-09-08 14:51:18,132-INFO-Starting LOAD phase
+2026-09-08 14:51:18,132-INFO-Loading products
+2026-09-08 14:51:18,697-ERROR-Product loading failed: (pymysql.err.ProgrammingError) (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+[SQL: SELECT products.product_id AS products_product_id, products.product_name AS products_product_name, products.category AS products_category, products.brand AS products_brand, products.unit_price AS products_unit_price, products.supplier_id AS products_supplier_id, products.status AS products_status 
+FROM products 
+WHERE products.product_id = %(pk_1)s]
+[parameters: {'pk_1': 'P0001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-09-08 14:51:18,697-ERROR-Pipeline failed: (pymysql.err.ProgrammingError) (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+[SQL: SELECT products.product_id AS products_product_id, products.product_name AS products_product_name, products.category AS products_category, products.brand AS products_brand, products.unit_price AS products_unit_price, products.supplier_id AS products_supplier_id, products.status AS products_status 
+FROM products 
+WHERE products.product_id = %(pk_1)s]
+[parameters: {'pk_1': 'P0001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.ProgrammingError: (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 92, in run_pipeline
+    load_product(
+    ~~~~~~~~~~~~^
+        valid_product_df
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 28, in load_product
+    existing = session.get(
+        Product,
+        product_id
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2271, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+[SQL: SELECT products.product_id AS products_product_id, products.product_name AS products_product_name, products.category AS products_category, products.brand AS products_brand, products.unit_price AS products_unit_price, products.supplier_id AS products_supplier_id, products.status AS products_status 
+FROM products 
+WHERE products.product_id = %(pk_1)s]
+[parameters: {'pk_1': 'P0001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-09-08 14:51:19,131-INFO-Closing down clientserver connection
+2026-09-08 14:53:02,024-INFO-Pipeline started
+2026-09-08 14:53:02,026-INFO-Starting EXTRACT phase
+2026-09-08 14:53:02,026-INFO-Reading products CSV
+2026-09-08 14:53:05,240-INFO-Reading customers CSV
+2026-09-08 14:53:05,484-INFO-Reading inventory CSV
+2026-09-08 14:53:05,733-INFO-Reading sales CSV
+2026-09-08 14:53:05,924-INFO-Reading stores CSV
+2026-09-08 14:53:06,115-INFO-Data extraction completed
+2026-09-08 14:53:06,116-INFO-Starting VALIDATE phase
+2026-09-08 14:53:06,116-INFO-Products Validation Started
+2026-09-08 14:53:06,558-INFO-Validation of Products completed
+2026-09-08 14:53:07,187-INFO-Accepted Records: 344
+2026-09-08 14:53:07,358-INFO-Rejected Records: 6
+2026-09-08 14:53:07,358-INFO-Validate Customers Started
+2026-09-08 14:53:08,125-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 14:53:08,125-INFO-Inventroy Validation Started
+2026-09-08 14:53:08,248-INFO-Validation of Inventory Completed
+2026-09-08 14:53:08,409-INFO-Accepted Records: 350
+2026-09-08 14:53:08,564-INFO-Rejected Records: 10
+2026-09-08 14:53:08,564-INFO-Sales Validation Started
+2026-09-08 14:53:08,712-INFO-Validation of Sale Completed
+2026-09-08 14:53:08,917-INFO-Accepted Records: 392
+2026-09-08 14:53:09,097-INFO-Rejected Records: 8
+2026-09-08 14:53:09,098-INFO-Stores Validation Started
+2026-09-08 14:53:09,230-INFO-Validation of Store Completed
+2026-09-08 14:53:09,379-INFO-Accepted Records: 314
+2026-09-08 14:53:09,515-INFO-Rejected Records: 6
+2026-09-08 14:53:09,515-INFO-Data validation completed
+2026-09-08 14:53:09,515-INFO-Starting LOAD phase
+2026-09-08 14:53:09,515-INFO-Loading products
+2026-09-08 14:53:09,827-ERROR-Product loading failed: (pymysql.err.ProgrammingError) (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+[SQL: SELECT products.product_id AS products_product_id, products.product_name AS products_product_name, products.category AS products_category, products.brand AS products_brand, products.unit_price AS products_unit_price, products.supplier_id AS products_supplier_id, products.status AS products_status 
+FROM products 
+WHERE products.product_id = %(pk_1)s]
+[parameters: {'pk_1': 'P0001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-09-08 14:53:09,828-ERROR-Pipeline failed: (pymysql.err.ProgrammingError) (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+[SQL: SELECT products.product_id AS products_product_id, products.product_name AS products_product_name, products.category AS products_category, products.brand AS products_brand, products.unit_price AS products_unit_price, products.supplier_id AS products_supplier_id, products.status AS products_status 
+FROM products 
+WHERE products.product_id = %(pk_1)s]
+[parameters: {'pk_1': 'P0001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.ProgrammingError: (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 92, in run_pipeline
+    load_product(
+    ~~~~~~~~~~~~^
+        valid_product_df
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 28, in load_product
+    existing = session.get(
+        Product,
+        product_id
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2271, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'supply_chain_analytics.products' doesn't exist")
+[SQL: SELECT products.product_id AS products_product_id, products.product_name AS products_product_name, products.category AS products_category, products.brand AS products_brand, products.unit_price AS products_unit_price, products.supplier_id AS products_supplier_id, products.status AS products_status 
+FROM products 
+WHERE products.product_id = %(pk_1)s]
+[parameters: {'pk_1': 'P0001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-09-08 14:53:09,925-INFO-Closing down clientserver connection
+2026-09-08 14:54:33,494-INFO-Pipeline started
+2026-09-08 14:54:33,494-INFO-Starting EXTRACT phase
+2026-09-08 14:54:33,495-INFO-Reading products CSV
+2026-09-08 14:54:38,809-INFO-Reading customers CSV
+2026-09-08 14:54:39,125-INFO-Reading inventory CSV
+2026-09-08 14:54:39,575-INFO-Reading sales CSV
+2026-09-08 14:54:39,942-INFO-Reading stores CSV
+2026-09-08 14:54:40,200-INFO-Data extraction completed
+2026-09-08 14:54:40,200-INFO-Starting VALIDATE phase
+2026-09-08 14:54:40,200-INFO-Products Validation Started
+2026-09-08 14:54:40,668-INFO-Validation of Products completed
+2026-09-08 14:54:41,362-INFO-Accepted Records: 344
+2026-09-08 14:54:41,573-INFO-Rejected Records: 6
+2026-09-08 14:54:41,573-INFO-Validate Customers Started
+2026-09-08 14:54:42,429-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 14:54:42,429-INFO-Inventroy Validation Started
+2026-09-08 14:54:42,538-INFO-Validation of Inventory Completed
+2026-09-08 14:54:42,748-INFO-Accepted Records: 350
+2026-09-08 14:54:42,979-INFO-Rejected Records: 10
+2026-09-08 14:54:42,980-INFO-Sales Validation Started
+2026-09-08 14:54:43,160-INFO-Validation of Sale Completed
+2026-09-08 14:54:43,341-INFO-Accepted Records: 392
+2026-09-08 14:54:43,486-INFO-Rejected Records: 8
+2026-09-08 14:54:43,486-INFO-Stores Validation Started
+2026-09-08 14:54:43,580-INFO-Validation of Store Completed
+2026-09-08 14:54:43,689-INFO-Accepted Records: 314
+2026-09-08 14:54:43,863-INFO-Rejected Records: 6
+2026-09-08 14:54:43,864-INFO-Data validation completed
+2026-09-08 14:54:43,864-INFO-Starting LOAD phase
+2026-09-08 14:54:43,864-INFO-Loading products
+2026-09-08 14:54:44,385-INFO-Products loaded successfully
+2026-09-08 14:54:44,385-INFO-Loading customers
+2026-09-08 14:54:44,775-INFO-Customers loaded successfully
+2026-09-08 14:54:44,776-INFO-Loading inventory
+2026-09-08 14:54:44,890-ERROR-Inventory loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000001', 'product_id': 'P0202', 'store_id': 'S0024', 'available_quantity': 42, 'reorder_level': 53, 'last_updated': datetime.date(2025, 11, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 14:54:44,890-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000001', 'product_id': 'P0202', 'store_id': 'S0024', 'available_quantity': 42, 'reorder_level': 53, 'last_updated': datetime.date(2025, 11, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 100, in run_pipeline
+    load_inventory(
+    ~~~~~~~~~~~~~~^
+        valid_inventory_df
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 140, in load_inventory
+    existing = session.get(
+        Inventory,
+        inventory_id
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000001', 'product_id': 'P0202', 'store_id': 'S0024', 'available_quantity': 42, 'reorder_level': 53, 'last_updated': datetime.date(2025, 11, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 14:54:44,972-INFO-Closing down clientserver connection
+2026-09-08 14:58:54,769-INFO-Pipeline started
+2026-09-08 14:58:54,770-INFO-Starting EXTRACT phase
+2026-09-08 14:58:54,770-INFO-Reading products CSV
+2026-09-08 14:58:57,695-INFO-Reading customers CSV
+2026-09-08 14:58:57,972-INFO-Reading inventory CSV
+2026-09-08 14:58:58,179-INFO-Reading sales CSV
+2026-09-08 14:58:58,461-INFO-Reading stores CSV
+2026-09-08 14:58:58,667-INFO-Data extraction completed
+2026-09-08 14:58:58,667-INFO-Starting VALIDATE phase
+2026-09-08 14:58:58,667-INFO-Products Validation Started
+2026-09-08 14:58:59,074-INFO-Validation of Products completed
+2026-09-08 14:58:59,761-INFO-Accepted Records: 344
+2026-09-08 14:59:00,099-INFO-Rejected Records: 6
+2026-09-08 14:59:00,099-INFO-Validate Customers Started
+2026-09-08 14:59:00,874-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 14:59:00,874-INFO-Inventroy Validation Started
+2026-09-08 14:59:01,000-INFO-Validation of Inventory Completed
+2026-09-08 14:59:01,177-INFO-Accepted Records: 350
+2026-09-08 14:59:01,319-INFO-Rejected Records: 10
+2026-09-08 14:59:01,320-INFO-Sales Validation Started
+2026-09-08 14:59:01,463-INFO-Validation of Sale Completed
+2026-09-08 14:59:01,660-INFO-Accepted Records: 392
+2026-09-08 14:59:01,877-INFO-Rejected Records: 8
+2026-09-08 14:59:01,878-INFO-Stores Validation Started
+2026-09-08 14:59:02,064-INFO-Validation of Store Completed
+2026-09-08 14:59:02,271-INFO-Accepted Records: 314
+2026-09-08 14:59:02,422-INFO-Rejected Records: 6
+2026-09-08 14:59:02,422-INFO-Data validation completed
+2026-09-08 14:59:02,423-INFO-Starting LOAD phase
+2026-09-08 14:59:02,423-INFO-Loading products
+2026-09-08 14:59:02,977-INFO-Products loaded successfully
+2026-09-08 14:59:02,977-INFO-Loading customers
+2026-09-08 14:59:03,415-INFO-Customers loaded successfully
+2026-09-08 14:59:03,415-INFO-Loading inventory
+2026-09-08 14:59:03,592-ERROR-Inventory loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000001', 'product_id': 'P0202', 'store_id': 'S0024', 'available_quantity': 42, 'reorder_level': 53, 'last_updated': datetime.date(2025, 11, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 14:59:03,593-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000001', 'product_id': 'P0202', 'store_id': 'S0024', 'available_quantity': 42, 'reorder_level': 53, 'last_updated': datetime.date(2025, 11, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 100, in run_pipeline
+    load_inventory(
+    ~~~~~~~~~~~~~~^
+        valid_inventory_df
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 190, in load_inventory
+    existing = session.get(
+        Inventory,
+        inventory_id
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `stores` (`store_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000001', 'product_id': 'P0202', 'store_id': 'S0024', 'available_quantity': 42, 'reorder_level': 53, 'last_updated': datetime.date(2025, 11, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 14:59:03,635-INFO-Closing down clientserver connection
+2026-09-08 15:00:15,786-INFO-Pipeline started
+2026-09-08 15:00:15,786-INFO-Starting EXTRACT phase
+2026-09-08 15:00:15,786-INFO-Reading products CSV
+2026-09-08 15:00:19,211-INFO-Reading customers CSV
+2026-09-08 15:00:19,658-INFO-Reading inventory CSV
+2026-09-08 15:00:20,056-INFO-Reading sales CSV
+2026-09-08 15:00:20,451-INFO-Reading stores CSV
+2026-09-08 15:00:20,780-INFO-Data extraction completed
+2026-09-08 15:00:20,780-INFO-Starting VALIDATE phase
+2026-09-08 15:00:20,780-INFO-Products Validation Started
+2026-09-08 15:00:21,352-INFO-Validation of Products completed
+2026-09-08 15:00:22,296-INFO-Accepted Records: 344
+2026-09-08 15:00:22,625-INFO-Rejected Records: 6
+2026-09-08 15:00:22,625-INFO-Validate Customers Started
+2026-09-08 15:00:23,370-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 15:00:23,370-INFO-Inventroy Validation Started
+2026-09-08 15:00:23,509-INFO-Validation of Inventory Completed
+2026-09-08 15:00:23,747-INFO-Accepted Records: 350
+2026-09-08 15:00:23,922-INFO-Rejected Records: 10
+2026-09-08 15:00:23,923-INFO-Sales Validation Started
+2026-09-08 15:00:24,048-INFO-Validation of Sale Completed
+2026-09-08 15:00:24,237-INFO-Accepted Records: 392
+2026-09-08 15:00:24,386-INFO-Rejected Records: 8
+2026-09-08 15:00:24,386-INFO-Stores Validation Started
+2026-09-08 15:00:24,480-INFO-Validation of Store Completed
+2026-09-08 15:00:24,686-INFO-Accepted Records: 314
+2026-09-08 15:00:24,887-INFO-Rejected Records: 6
+2026-09-08 15:00:24,887-INFO-Data validation completed
+2026-09-08 15:00:24,887-INFO-Starting LOAD phase
+2026-09-08 15:00:24,887-INFO-Loading products
+2026-09-08 15:00:25,371-INFO-Products loaded successfully
+2026-09-08 15:00:25,371-INFO-Loading customers
+2026-09-08 15:00:25,657-INFO-Customers loaded successfully
+2026-09-08 15:00:25,657-INFO-Loading stores
+2026-09-08 15:00:26,115-INFO-Stores loaded successfully
+2026-09-08 15:00:26,115-INFO-Loading inventory
+2026-09-08 15:00:26,545-ERROR-Inventory loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000352', 'product_id': 'P9999', 'store_id': 'S0005', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': datetime.date(2026, 8, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:00:26,546-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000352', 'product_id': 'P9999', 'store_id': 'S0005', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': datetime.date(2026, 8, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 92, in run_pipeline
+    load_inventory(valid_inventory_df)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 190, in load_inventory
+    existing = session.get(
+        Inventory,
+        inventory_id
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`inventories`, CONSTRAINT `inventories_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000352', 'product_id': 'P9999', 'store_id': 'S0005', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': datetime.date(2026, 8, 1)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:00:26,576-INFO-Closing down clientserver connection
+2026-09-08 15:03:09,405-INFO-Pipeline started
+2026-09-08 15:03:09,405-INFO-Starting EXTRACT phase
+2026-09-08 15:03:09,405-INFO-Reading products CSV
+2026-09-08 15:03:13,471-INFO-Reading customers CSV
+2026-09-08 15:03:13,850-INFO-Reading inventory CSV
+2026-09-08 15:03:14,245-INFO-Reading sales CSV
+2026-09-08 15:03:14,629-INFO-Reading stores CSV
+2026-09-08 15:03:14,881-INFO-Data extraction completed
+2026-09-08 15:03:14,881-INFO-Starting VALIDATE phase
+2026-09-08 15:03:14,881-INFO-Products Validation Started
+2026-09-08 15:03:15,507-INFO-Validation of Products completed
+2026-09-08 15:03:16,645-INFO-Accepted Records: 344
+2026-09-08 15:03:16,957-INFO-Rejected Records: 6
+2026-09-08 15:03:16,957-INFO-Validate Customers Started
+2026-09-08 15:03:18,087-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 15:03:18,087-INFO-Stores Validation Started
+2026-09-08 15:03:18,289-INFO-Validation of Store Completed
+2026-09-08 15:03:18,567-INFO-Accepted Records: 314
+2026-09-08 15:03:18,790-INFO-Rejected Records: 6
+2026-09-08 15:03:18,790-INFO-Inventory Validation Started
+2026-09-08 15:03:20,573-INFO-Validation of Inventory Completed
+2026-09-08 15:03:20,787-INFO-Accepted Records: 348
+2026-09-08 15:03:20,968-INFO-Rejected Records: 12
+2026-09-08 15:03:20,968-INFO-Sales Validation Started
+2026-09-08 15:03:21,133-INFO-Validation of Sale Completed
+2026-09-08 15:03:21,268-INFO-Accepted Records: 392
+2026-09-08 15:03:21,425-INFO-Rejected Records: 8
+2026-09-08 15:03:21,425-INFO-Data validation completed
+2026-09-08 15:03:21,425-INFO-Starting LOAD phase
+2026-09-08 15:03:21,425-INFO-Loading products
+2026-09-08 15:03:21,847-INFO-Products loaded successfully
+2026-09-08 15:03:21,847-INFO-Loading customers
+2026-09-08 15:03:22,271-INFO-Customers loaded successfully
+2026-09-08 15:03:22,271-INFO-Loading stores
+2026-09-08 15:03:22,549-INFO-Stores loaded successfully
+2026-09-08 15:03:22,549-INFO-Loading inventory
+2026-09-08 15:03:23,010-INFO-Inventory loaded successfully
+2026-09-08 15:03:23,010-INFO-Loading sales
+2026-09-08 15:03:23,581-ERROR-Sales loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+[SQL: INSERT INTO sales (sale_id, product_id, store_id, customer_id, quantity, sale_date, discount_percentage, payment_mode) VALUES (%(sale_id)s, %(product_id)s, %(store_id)s, %(customer_id)s, %(quantity)s, %(sale_date)s, %(discount_percentage)s, %(payment_mode)s)]
+[parameters: {'sale_id': 'TXN000386', 'product_id': 'P9999', 'store_id': 'S0001', 'customer_id': 'C00001', 'quantity': 5, 'sale_date': datetime.date(2026, 8, 1), 'discount_percentage': 5, 'payment_mode': 'UPI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:03:23,582-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+[SQL: INSERT INTO sales (sale_id, product_id, store_id, customer_id, quantity, sale_date, discount_percentage, payment_mode) VALUES (%(sale_id)s, %(product_id)s, %(store_id)s, %(customer_id)s, %(quantity)s, %(sale_date)s, %(discount_percentage)s, %(payment_mode)s)]
+[parameters: {'sale_id': 'TXN000386', 'product_id': 'P9999', 'store_id': 'S0001', 'customer_id': 'C00001', 'quantity': 5, 'sale_date': datetime.date(2026, 8, 1), 'discount_percentage': 5, 'payment_mode': 'UPI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 100, in run_pipeline
+    load_sales(valid_sales_df)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 243, in load_sales
+    existing = session.get(
+        Sale,
+        sale_id
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`supply_chain_analytics`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))')
+[SQL: INSERT INTO sales (sale_id, product_id, store_id, customer_id, quantity, sale_date, discount_percentage, payment_mode) VALUES (%(sale_id)s, %(product_id)s, %(store_id)s, %(customer_id)s, %(quantity)s, %(sale_date)s, %(discount_percentage)s, %(payment_mode)s)]
+[parameters: {'sale_id': 'TXN000386', 'product_id': 'P9999', 'store_id': 'S0001', 'customer_id': 'C00001', 'quantity': 5, 'sale_date': datetime.date(2026, 8, 1), 'discount_percentage': 5, 'payment_mode': 'UPI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:03:23,613-INFO-Closing down clientserver connection
+2026-09-08 15:05:53,345-INFO-Pipeline started
+2026-09-08 15:05:53,346-INFO-Starting EXTRACT phase
+2026-09-08 15:05:53,346-INFO-Reading products CSV
+2026-09-08 15:05:55,954-INFO-Reading customers CSV
+2026-09-08 15:05:56,324-INFO-Reading inventory CSV
+2026-09-08 15:05:56,689-INFO-Reading sales CSV
+2026-09-08 15:05:57,192-INFO-Reading stores CSV
+2026-09-08 15:05:57,639-INFO-Data extraction completed
+2026-09-08 15:05:57,640-INFO-Starting VALIDATE phase
+2026-09-08 15:05:57,640-INFO-Products Validation Started
+2026-09-08 15:05:58,371-INFO-Validation of Products completed
+2026-09-08 15:05:59,680-INFO-Accepted Records: 344
+2026-09-08 15:06:00,119-INFO-Rejected Records: 6
+2026-09-08 15:06:00,119-INFO-Customers Validation Started
+2026-09-08 15:06:01,917-INFO-Customer validation completed. Accepted Records: 343, Rejected Records: 7
+2026-09-08 15:06:01,918-INFO-Stores Validation Started
+2026-09-08 15:06:02,366-INFO-Validation of Stores completed
+2026-09-08 15:06:02,694-INFO-Accepted Records: 314
+2026-09-08 15:06:02,933-INFO-Rejected Records: 6
+2026-09-08 15:06:02,933-INFO-Inventory Validation Started
+2026-09-08 15:06:05,835-INFO-Validation of Inventory completed
+2026-09-08 15:06:06,164-INFO-Accepted Records: 348
+2026-09-08 15:06:06,416-INFO-Rejected Records: 12
+2026-09-08 15:06:06,416-ERROR-Pipeline failed: validate_sales() missing 3 required positional arguments: 'product_df', 'store_df', and 'customer_df'
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 76, in run_pipeline
+    validate_sales(sales_df)
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: validate_sales() missing 3 required positional arguments: 'product_df', 'store_df', and 'customer_df'
+2026-09-08 15:06:06,436-INFO-Closing down clientserver connection
+2026-09-08 15:07:25,440-INFO-Pipeline started
+2026-09-08 15:07:25,441-INFO-Starting EXTRACT phase
+2026-09-08 15:07:25,441-INFO-Reading products CSV
+2026-09-08 15:07:28,897-INFO-Reading customers CSV
+2026-09-08 15:07:29,214-INFO-Reading inventory CSV
+2026-09-08 15:07:29,484-INFO-Reading sales CSV
+2026-09-08 15:07:29,782-INFO-Reading stores CSV
+2026-09-08 15:07:30,026-INFO-Data extraction completed
+2026-09-08 15:07:30,026-INFO-Starting VALIDATE phase
+2026-09-08 15:07:30,026-INFO-Products Validation Started
+2026-09-08 15:07:31,177-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:07:31,177-INFO-Customers Validation Started
+2026-09-08 15:07:31,870-INFO-Customers validation completed. Accepted: 344, Rejected: 6
+2026-09-08 15:07:31,870-INFO-Stores Validation Started
+2026-09-08 15:07:32,370-INFO-Stores validation completed. Accepted: 315, Rejected: 5
+2026-09-08 15:07:32,370-INFO-Inventory Validation Started
+2026-09-08 15:07:34,313-INFO-Inventory validation completed. Accepted: 349, Rejected: 11
+2026-09-08 15:07:34,314-ERROR-Pipeline failed: validate_sales() missing 3 required positional arguments: 'product_df', 'store_df', and 'customer_df'
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 76, in run_pipeline
+    validate_sales(sales_df)
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: validate_sales() missing 3 required positional arguments: 'product_df', 'store_df', and 'customer_df'
+2026-09-08 15:07:34,340-INFO-Closing down clientserver connection
+2026-09-08 15:08:45,076-INFO-Closing down clientserver connection
+2026-09-08 15:10:07,292-INFO-Pipeline Started
+2026-09-08 15:10:07,292-INFO-Starting EXTRACT phase
+2026-09-08 15:10:07,292-INFO-Reading products CSV
+2026-09-08 15:10:10,426-INFO-Reading customers CSV
+2026-09-08 15:10:10,801-INFO-Reading inventory CSV
+2026-09-08 15:10:11,099-INFO-Reading sales CSV
+2026-09-08 15:10:11,337-INFO-Reading stores CSV
+2026-09-08 15:10:11,684-INFO-Data extraction completed
+2026-09-08 15:10:11,685-INFO-Starting VALIDATE phase
+2026-09-08 15:10:11,685-INFO-Products Validation Started
+2026-09-08 15:10:12,819-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:10:12,820-INFO-Customers Validation Started
+2026-09-08 15:10:13,506-INFO-Customers validation completed. Accepted: 344, Rejected: 6
+2026-09-08 15:10:13,506-INFO-Stores Validation Started
+2026-09-08 15:10:13,997-INFO-Stores validation completed. Accepted: 315, Rejected: 5
+2026-09-08 15:10:13,997-INFO-Inventory Validation Started
+2026-09-08 15:10:15,902-INFO-Inventory validation completed. Accepted: 349, Rejected: 11
+2026-09-08 15:10:15,903-INFO-Sales Validation Started
+2026-09-08 15:10:17,853-INFO-Sales validation completed. Accepted: 388, Rejected: 12
+2026-09-08 15:10:17,854-INFO-Data validation completed
+2026-09-08 15:10:17,854-INFO-Starting TRANSFORM phase
+2026-09-08 15:10:17,854-INFO-Products Transformation Started
+2026-09-08 15:10:18,102-INFO-Products Transformation Completed
+2026-09-08 15:10:18,102-INFO-Customers Transformation Started
+2026-09-08 15:10:18,121-ERROR-Error transforming Customers: name 'lower' is not defined
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\transform.py", line 73, in transform_customers
+    lower(trim(col("email")))
+    ^^^^^
+NameError: name 'lower' is not defined. Did you mean: 'logger'?
+2026-09-08 15:10:18,125-ERROR-Pipeline failed: name 'lower' is not defined
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 105, in run_pipeline
+    transformed_customer_df = transform_customers(
+        valid_customer_df
+    )
+  File "C:\Users\o\supply-chain-analytics\pipeline\transform.py", line 73, in transform_customers
+    lower(trim(col("email")))
+    ^^^^^
+NameError: name 'lower' is not defined. Did you mean: 'logger'?
+2026-09-08 15:11:20,110-INFO-Pipeline Started
+2026-09-08 15:11:20,111-INFO-Starting EXTRACT phase
+2026-09-08 15:11:20,112-INFO-Reading products CSV
+2026-09-08 15:11:26,614-INFO-Reading customers CSV
+2026-09-08 15:11:27,019-INFO-Reading inventory CSV
+2026-09-08 15:11:27,445-INFO-Reading sales CSV
+2026-09-08 15:11:27,812-INFO-Reading stores CSV
+2026-09-08 15:11:28,067-INFO-Data extraction completed
+2026-09-08 15:11:28,068-INFO-Starting VALIDATE phase
+2026-09-08 15:11:28,068-INFO-Products Validation Started
+2026-09-08 15:11:30,022-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:11:30,023-INFO-Customers Validation Started
+2026-09-08 15:11:31,520-INFO-Customers validation completed. Accepted: 344, Rejected: 6
+2026-09-08 15:11:31,521-INFO-Stores Validation Started
+2026-09-08 15:11:32,619-INFO-Stores validation completed. Accepted: 315, Rejected: 5
+2026-09-08 15:11:32,619-INFO-Inventory Validation Started
+2026-09-08 15:11:37,100-INFO-Inventory validation completed. Accepted: 349, Rejected: 11
+2026-09-08 15:11:37,100-INFO-Sales Validation Started
+2026-09-08 15:11:41,820-INFO-Sales validation completed. Accepted: 388, Rejected: 12
+2026-09-08 15:11:41,820-INFO-Data validation completed
+2026-09-08 15:11:41,820-INFO-Starting TRANSFORM phase
+2026-09-08 15:11:41,821-INFO-Products Transformation Started
+2026-09-08 15:11:42,348-INFO-Products Transformation Completed
+2026-09-08 15:11:42,348-INFO-Customers Transformation Started
+2026-09-08 15:11:42,518-INFO-Customers Transformation Completed
+2026-09-08 15:11:42,519-INFO-Stores Transformation Started
+2026-09-08 15:11:42,650-INFO-Stores Transformation Completed
+2026-09-08 15:11:42,650-INFO-Inventory Transformation Started
+2026-09-08 15:11:42,774-INFO-Inventory Transformation Completed
+2026-09-08 15:11:42,774-INFO-Sales Transformation Started
+2026-09-08 15:11:42,923-INFO-Sales Transformation Completed
+2026-09-08 15:11:42,924-INFO-Data transformation completed
+2026-09-08 15:11:42,924-INFO-Starting LOAD phase
+2026-09-08 15:11:42,924-INFO-Loading products
+2026-09-08 15:11:46,995-INFO-Products loaded successfully
+2026-09-08 15:11:46,996-INFO-Loading customers
+2026-09-08 15:11:48,091-ERROR-Customer loading failed: (pymysql.err.IntegrityError) (1048, "Column 'registration_date' cannot be null")
+[SQL: INSERT INTO customers (customer_id, customer_name, email, mobile, city, registration_date, customer_type) VALUES (%(customer_id)s, %(customer_name)s, %(email)s, %(mobile)s, %(city)s, %(registration_date)s, %(customer_type)s)]
+[parameters: {'customer_id': 'C00349', 'customer_name': 'Invalid Date', 'email': 'date@example.com', 'mobile': '9876543219', 'city': 'Noida', 'registration_date': None, 'customer_type': 'REGULAR'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:11:48,091-ERROR-Pipeline failed: (pymysql.err.IntegrityError) (1048, "Column 'registration_date' cannot be null")
+[SQL: INSERT INTO customers (customer_id, customer_name, email, mobile, city, registration_date, customer_type) VALUES (%(customer_id)s, %(customer_name)s, %(email)s, %(mobile)s, %(city)s, %(registration_date)s, %(customer_type)s)]
+[parameters: {'customer_id': 'C00349', 'customer_name': 'Invalid Date', 'email': 'date@example.com', 'mobile': '9876543219', 'city': 'Noida', 'registration_date': None, 'customer_type': 'REGULAR'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1048, "Column 'registration_date' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 134, in run_pipeline
+    load_customer(
+    ~~~~~~~~~~~~~^
+        transformed_customer_df
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 101, in load_customer
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\AppData\Local\Programs\Python\Python314\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'registration_date' cannot be null")
+[SQL: INSERT INTO customers (customer_id, customer_name, email, mobile, city, registration_date, customer_type) VALUES (%(customer_id)s, %(customer_name)s, %(email)s, %(mobile)s, %(city)s, %(registration_date)s, %(customer_type)s)]
+[parameters: {'customer_id': 'C00349', 'customer_name': 'Invalid Date', 'email': 'date@example.com', 'mobile': '9876543219', 'city': 'Noida', 'registration_date': None, 'customer_type': 'REGULAR'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:11:48,290-INFO-Closing down clientserver connection
+2026-09-08 15:15:12,582-INFO-Pipeline Started
+2026-09-08 15:15:12,583-INFO-Starting EXTRACT phase
+2026-09-08 15:15:12,583-INFO-Reading products CSV
+2026-09-08 15:15:21,483-INFO-Reading customers CSV
+2026-09-08 15:15:22,054-INFO-Reading inventory CSV
+2026-09-08 15:15:22,409-INFO-Reading sales CSV
+2026-09-08 15:15:22,815-INFO-Reading stores CSV
+2026-09-08 15:15:23,261-INFO-Data extraction completed
+2026-09-08 15:15:23,263-INFO-Starting VALIDATE phase
+2026-09-08 15:15:23,263-INFO-Products Validation Started
+2026-09-08 15:15:25,197-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:15:25,197-INFO-Customers Validation Started
+2026-09-08 15:15:25,199-ERROR-Error validating Customers: name 'try_to_date' is not defined
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 156, in validate_customers
+    try_to_date(
+    ^^^^^^^^^^^
+NameError: name 'try_to_date' is not defined
+2026-09-08 15:15:25,204-ERROR-Pipeline failed: name 'try_to_date' is not defined
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 67, in run_pipeline
+    valid_customer_df, rejected_customer_df = validate_customers(
+                                              ~~~~~~~~~~~~~~~~~~^
+        customer_df
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\validate.py", line 156, in validate_customers
+    try_to_date(
+    ^^^^^^^^^^^
+NameError: name 'try_to_date' is not defined
+2026-09-08 15:15:25,263-INFO-Closing down clientserver connection
+2026-09-08 15:17:16,178-INFO-Pipeline Started
+2026-09-08 15:17:16,179-INFO-Starting EXTRACT phase
+2026-09-08 15:17:16,179-INFO-Reading products CSV
+2026-09-08 15:17:23,399-INFO-Reading customers CSV
+2026-09-08 15:17:23,959-INFO-Reading inventory CSV
+2026-09-08 15:17:24,497-INFO-Reading sales CSV
+2026-09-08 15:17:25,095-INFO-Reading stores CSV
+2026-09-08 15:17:25,979-INFO-Data extraction completed
+2026-09-08 15:17:25,979-INFO-Starting VALIDATE phase
+2026-09-08 15:17:25,979-INFO-Products Validation Started
+2026-09-08 15:17:29,064-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:17:29,064-INFO-Customers Validation Started
+2026-09-08 15:17:31,338-INFO-Customers validation completed. Accepted: 343, Rejected: 7
+2026-09-08 15:17:31,338-INFO-Stores Validation Started
+2026-09-08 15:17:32,462-INFO-Stores validation completed. Accepted: 315, Rejected: 5
+2026-09-08 15:17:32,463-INFO-Inventory Validation Started
+2026-09-08 15:17:37,502-INFO-Inventory validation completed. Accepted: 349, Rejected: 11
+2026-09-08 15:17:37,503-INFO-Sales Validation Started
+2026-09-08 15:17:42,022-INFO-Sales validation completed. Accepted: 388, Rejected: 12
+2026-09-08 15:17:42,023-INFO-Data validation completed
+2026-09-08 15:17:42,023-INFO-Starting TRANSFORM phase
+2026-09-08 15:17:42,023-INFO-Products Transformation Started
+2026-09-08 15:17:42,184-INFO-Products Transformation Completed
+2026-09-08 15:17:42,184-INFO-Customers Transformation Started
+2026-09-08 15:17:42,349-INFO-Customers Transformation Completed
+2026-09-08 15:17:42,349-INFO-Stores Transformation Started
+2026-09-08 15:17:42,477-INFO-Stores Transformation Completed
+2026-09-08 15:17:42,477-INFO-Inventory Transformation Started
+2026-09-08 15:17:42,612-INFO-Inventory Transformation Completed
+2026-09-08 15:17:42,612-INFO-Sales Transformation Started
+2026-09-08 15:17:42,770-INFO-Sales Transformation Completed
+2026-09-08 15:17:42,770-INFO-Data transformation completed
+2026-09-08 15:17:42,770-INFO-Starting LOAD phase
+2026-09-08 15:17:42,771-INFO-Loading products
+2026-09-08 15:17:46,290-INFO-Products loaded successfully
+2026-09-08 15:17:46,290-INFO-Loading customers
+2026-09-08 15:17:47,275-INFO-Customers loaded successfully
+2026-09-08 15:17:47,276-INFO-Loading stores
+2026-09-08 15:17:48,076-ERROR-Store loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'opening_date' cannot be null")
+[SQL: INSERT INTO stores (store_id, store_name, city, state, store_manager, opening_date, status) VALUES (%(store_id)s, %(store_name)s, %(city)s, %(state)s, %(store_manager)s, %(opening_date)s, %(status)s)]
+[parameters: {'store_id': 'S0315', 'store_name': 'Invalid Date', 'city': 'Noida', 'state': 'Uttar Pradesh', 'store_manager': 'Karan Singh', 'opening_date': None, 'status': 'ACTIVE'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:17:48,076-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'opening_date' cannot be null")
+[SQL: INSERT INTO stores (store_id, store_name, city, state, store_manager, opening_date, status) VALUES (%(store_id)s, %(store_name)s, %(city)s, %(state)s, %(store_manager)s, %(opening_date)s, %(status)s)]
+[parameters: {'store_id': 'S0315', 'store_name': 'Invalid Date', 'city': 'Noida', 'state': 'Uttar Pradesh', 'store_manager': 'Karan Singh', 'opening_date': None, 'status': 'ACTIVE'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1048, "Column 'opening_date' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 138, in run_pipeline
+    load_store(
+    ~~~~~~~~~~^
+        transformed_store_df
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 136, in load_store
+    existing = session.get(
+        Store,
+        store_id
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'opening_date' cannot be null")
+[SQL: INSERT INTO stores (store_id, store_name, city, state, store_manager, opening_date, status) VALUES (%(store_id)s, %(store_name)s, %(city)s, %(state)s, %(store_manager)s, %(opening_date)s, %(status)s)]
+[parameters: {'store_id': 'S0315', 'store_name': 'Invalid Date', 'city': 'Noida', 'state': 'Uttar Pradesh', 'store_manager': 'Karan Singh', 'opening_date': None, 'status': 'ACTIVE'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:17:48,513-INFO-Closing down clientserver connection
+2026-09-08 15:19:59,657-INFO-Pipeline Started
+2026-09-08 15:19:59,657-INFO-Starting EXTRACT phase
+2026-09-08 15:19:59,657-INFO-Reading products CSV
+2026-09-08 15:20:07,386-INFO-Reading customers CSV
+2026-09-08 15:20:08,081-INFO-Reading inventory CSV
+2026-09-08 15:20:08,698-INFO-Reading sales CSV
+2026-09-08 15:20:09,300-INFO-Reading stores CSV
+2026-09-08 15:20:09,764-INFO-Data extraction completed
+2026-09-08 15:20:09,764-INFO-Starting VALIDATE phase
+2026-09-08 15:20:09,764-INFO-Products Validation Started
+2026-09-08 15:20:12,445-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:20:12,445-INFO-Customers Validation Started
+2026-09-08 15:20:14,443-INFO-Customers validation completed. Accepted: 343, Rejected: 7
+2026-09-08 15:20:14,443-INFO-Stores Validation Started
+2026-09-08 15:20:15,690-INFO-Stores validation completed. Accepted: 314, Rejected: 6
+2026-09-08 15:20:15,691-INFO-Inventory Validation Started
+2026-09-08 15:20:20,311-INFO-Inventory validation completed. Accepted: 349, Rejected: 11
+2026-09-08 15:20:20,311-INFO-Sales Validation Started
+2026-09-08 15:20:24,766-INFO-Sales validation completed. Accepted: 388, Rejected: 12
+2026-09-08 15:20:24,767-INFO-Data validation completed
+2026-09-08 15:20:24,767-INFO-Starting TRANSFORM phase
+2026-09-08 15:20:24,767-INFO-Products Transformation Started
+2026-09-08 15:20:24,965-INFO-Products Transformation Completed
+2026-09-08 15:20:24,966-INFO-Customers Transformation Started
+2026-09-08 15:20:25,105-INFO-Customers Transformation Completed
+2026-09-08 15:20:25,105-INFO-Stores Transformation Started
+2026-09-08 15:20:25,240-INFO-Stores Transformation Completed
+2026-09-08 15:20:25,240-INFO-Inventory Transformation Started
+2026-09-08 15:20:25,381-INFO-Inventory Transformation Completed
+2026-09-08 15:20:25,381-INFO-Sales Transformation Started
+2026-09-08 15:20:25,565-INFO-Sales Transformation Completed
+2026-09-08 15:20:25,565-INFO-Data transformation completed
+2026-09-08 15:20:25,565-INFO-Starting LOAD phase
+2026-09-08 15:20:25,565-INFO-Loading products
+2026-09-08 15:20:28,826-INFO-Products loaded successfully
+2026-09-08 15:20:28,827-INFO-Loading customers
+2026-09-08 15:20:29,749-INFO-Customers loaded successfully
+2026-09-08 15:20:29,749-INFO-Loading stores
+2026-09-08 15:20:30,630-INFO-Stores loaded successfully
+2026-09-08 15:20:30,631-INFO-Loading inventory
+2026-09-08 15:20:31,568-ERROR-Inventory loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'last_updated' cannot be null")
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000351', 'product_id': 'P0004', 'store_id': 'S0004', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:20:31,568-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'last_updated' cannot be null")
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000351', 'product_id': 'P0004', 'store_id': 'S0004', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1048, "Column 'last_updated' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 142, in run_pipeline
+    load_inventory(
+    ~~~~~~~~~~~~~~^
+        transformed_inventory_df
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 190, in load_inventory
+    existing = session.get(
+        Inventory,
+        inventory_id
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'last_updated' cannot be null")
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000351', 'product_id': 'P0004', 'store_id': 'S0004', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:20:31,680-INFO-Closing down clientserver connection
+2026-09-08 15:22:38,612-INFO-Pipeline Started
+2026-09-08 15:22:38,612-INFO-Starting EXTRACT phase
+2026-09-08 15:22:38,612-INFO-Reading products CSV
+2026-09-08 15:22:45,361-INFO-Reading customers CSV
+2026-09-08 15:22:45,991-INFO-Reading inventory CSV
+2026-09-08 15:22:46,503-INFO-Reading sales CSV
+2026-09-08 15:22:47,016-INFO-Reading stores CSV
+2026-09-08 15:22:47,461-INFO-Data extraction completed
+2026-09-08 15:22:47,461-INFO-Starting VALIDATE phase
+2026-09-08 15:22:47,461-INFO-Products Validation Started
+2026-09-08 15:22:49,914-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:22:49,914-INFO-Customers Validation Started
+2026-09-08 15:22:51,808-INFO-Customers validation completed. Accepted: 343, Rejected: 7
+2026-09-08 15:22:51,809-INFO-Stores Validation Started
+2026-09-08 15:22:53,010-INFO-Stores validation completed. Accepted: 314, Rejected: 6
+2026-09-08 15:22:53,010-INFO-Inventory Validation Started
+2026-09-08 15:22:57,423-INFO-Inventory validation completed. Accepted: 349, Rejected: 11
+2026-09-08 15:22:57,424-INFO-Sales Validation Started
+2026-09-08 15:23:01,865-INFO-Sales validation completed. Accepted: 388, Rejected: 12
+2026-09-08 15:23:01,865-INFO-Data validation completed
+2026-09-08 15:23:01,865-INFO-Starting TRANSFORM phase
+2026-09-08 15:23:01,865-INFO-Products Transformation Started
+2026-09-08 15:23:02,034-INFO-Products Transformation Completed
+2026-09-08 15:23:02,034-INFO-Customers Transformation Started
+2026-09-08 15:23:02,176-INFO-Customers Transformation Completed
+2026-09-08 15:23:02,177-INFO-Stores Transformation Started
+2026-09-08 15:23:02,310-INFO-Stores Transformation Completed
+2026-09-08 15:23:02,310-INFO-Inventory Transformation Started
+2026-09-08 15:23:02,471-INFO-Inventory Transformation Completed
+2026-09-08 15:23:02,471-INFO-Sales Transformation Started
+2026-09-08 15:23:02,640-INFO-Sales Transformation Completed
+2026-09-08 15:23:02,640-INFO-Data transformation completed
+2026-09-08 15:23:02,640-INFO-Starting LOAD phase
+2026-09-08 15:23:02,641-INFO-Loading products
+2026-09-08 15:23:05,937-INFO-Products loaded successfully
+2026-09-08 15:23:05,937-INFO-Loading customers
+2026-09-08 15:23:07,156-INFO-Customers loaded successfully
+2026-09-08 15:23:07,157-INFO-Loading stores
+2026-09-08 15:23:08,164-INFO-Stores loaded successfully
+2026-09-08 15:23:08,164-INFO-Loading inventory
+2026-09-08 15:23:09,142-ERROR-Inventory loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'last_updated' cannot be null")
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000351', 'product_id': 'P0004', 'store_id': 'S0004', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:23:09,142-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'last_updated' cannot be null")
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000351', 'product_id': 'P0004', 'store_id': 'S0004', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1048, "Column 'last_updated' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 142, in run_pipeline
+    load_inventory(
+    ~~~~~~~~~~~~~~^
+        transformed_inventory_df
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 190, in load_inventory
+    existing = session.get(
+        Inventory,
+        inventory_id
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'last_updated' cannot be null")
+[SQL: INSERT INTO inventories (inventory_id, product_id, store_id, available_quantity, reorder_level, last_updated) VALUES (%(inventory_id)s, %(product_id)s, %(store_id)s, %(available_quantity)s, %(reorder_level)s, %(last_updated)s)]
+[parameters: {'inventory_id': 'INV000351', 'product_id': 'P0004', 'store_id': 'S0004', 'available_quantity': 50, 'reorder_level': 10, 'last_updated': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:23:09,242-INFO-Closing down clientserver connection
+2026-09-08 15:24:19,221-INFO-Pipeline Started
+2026-09-08 15:24:19,222-INFO-Starting EXTRACT phase
+2026-09-08 15:24:19,222-INFO-Reading products CSV
+2026-09-08 15:24:24,721-INFO-Reading customers CSV
+2026-09-08 15:24:25,511-INFO-Reading inventory CSV
+2026-09-08 15:24:26,089-INFO-Reading sales CSV
+2026-09-08 15:24:26,652-INFO-Reading stores CSV
+2026-09-08 15:24:27,136-INFO-Data extraction completed
+2026-09-08 15:24:27,136-INFO-Starting VALIDATE phase
+2026-09-08 15:24:27,136-INFO-Products Validation Started
+2026-09-08 15:24:29,647-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:24:29,648-INFO-Customers Validation Started
+2026-09-08 15:24:31,954-INFO-Customers validation completed. Accepted: 343, Rejected: 7
+2026-09-08 15:24:31,954-INFO-Stores Validation Started
+2026-09-08 15:24:33,125-INFO-Stores validation completed. Accepted: 314, Rejected: 6
+2026-09-08 15:24:33,126-INFO-Inventory Validation Started
+2026-09-08 15:24:38,614-INFO-Inventory validation completed. Accepted: 348, Rejected: 12
+2026-09-08 15:24:38,614-INFO-Sales Validation Started
+2026-09-08 15:24:43,497-INFO-Sales validation completed. Accepted: 388, Rejected: 12
+2026-09-08 15:24:43,497-INFO-Data validation completed
+2026-09-08 15:24:43,497-INFO-Starting TRANSFORM phase
+2026-09-08 15:24:43,498-INFO-Products Transformation Started
+2026-09-08 15:24:43,649-INFO-Products Transformation Completed
+2026-09-08 15:24:43,650-INFO-Customers Transformation Started
+2026-09-08 15:24:43,796-INFO-Customers Transformation Completed
+2026-09-08 15:24:43,796-INFO-Stores Transformation Started
+2026-09-08 15:24:43,933-INFO-Stores Transformation Completed
+2026-09-08 15:24:43,934-INFO-Inventory Transformation Started
+2026-09-08 15:24:44,111-INFO-Inventory Transformation Completed
+2026-09-08 15:24:44,112-INFO-Sales Transformation Started
+2026-09-08 15:24:44,336-INFO-Sales Transformation Completed
+2026-09-08 15:24:44,336-INFO-Data transformation completed
+2026-09-08 15:24:44,336-INFO-Starting LOAD phase
+2026-09-08 15:24:44,336-INFO-Loading products
+2026-09-08 15:24:47,486-INFO-Products loaded successfully
+2026-09-08 15:24:47,486-INFO-Loading customers
+2026-09-08 15:24:48,561-INFO-Customers loaded successfully
+2026-09-08 15:24:48,561-INFO-Loading stores
+2026-09-08 15:24:49,322-INFO-Stores loaded successfully
+2026-09-08 15:24:49,322-INFO-Loading inventory
+2026-09-08 15:24:50,242-INFO-Inventory loaded successfully
+2026-09-08 15:24:50,243-INFO-Loading sales
+2026-09-08 15:24:51,875-ERROR-Sales loading failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'sale_date' cannot be null")
+[SQL: INSERT INTO sales (sale_id, product_id, store_id, customer_id, quantity, sale_date, discount_percentage, payment_mode) VALUES (%(sale_id)s, %(product_id)s, %(store_id)s, %(customer_id)s, %(quantity)s, %(sale_date)s, %(discount_percentage)s, %(payment_mode)s)]
+[parameters: {'sale_id': 'TXN000390', 'product_id': 'P0001', 'store_id': 'S0001', 'customer_id': 'C00001', 'quantity': 5, 'sale_date': None, 'discount_percentage': 5, 'payment_mode': 'UPI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:24:51,875-ERROR-Pipeline failed: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'sale_date' cannot be null")
+[SQL: INSERT INTO sales (sale_id, product_id, store_id, customer_id, quantity, sale_date, discount_percentage, payment_mode) VALUES (%(sale_id)s, %(product_id)s, %(store_id)s, %(customer_id)s, %(quantity)s, %(sale_date)s, %(discount_percentage)s, %(payment_mode)s)]
+[parameters: {'sale_id': 'TXN000390', 'product_id': 'P0001', 'store_id': 'S0001', 'customer_id': 'C00001', 'quantity': 5, 'sale_date': None, 'discount_percentage': 5, 'payment_mode': 'UPI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1048, "Column 'sale_date' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\o\supply-chain-analytics\pipeline\run_pipeline.py", line 146, in run_pipeline
+    load_sales(
+    ~~~~~~~~~~^
+        transformed_sales_df
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\pipeline\load.py", line 243, in load_sales
+    existing = session.get(
+        Sale,
+        sale_id
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3702, in get
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        entity,
+        ^^^^^^^
+    ...<7 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3881, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2250, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        False,
+        ^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3073, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3062, in _autoflush
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\o\supply-chain-analytics\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.IntegrityError) (1048, "Column 'sale_date' cannot be null")
+[SQL: INSERT INTO sales (sale_id, product_id, store_id, customer_id, quantity, sale_date, discount_percentage, payment_mode) VALUES (%(sale_id)s, %(product_id)s, %(store_id)s, %(customer_id)s, %(quantity)s, %(sale_date)s, %(discount_percentage)s, %(payment_mode)s)]
+[parameters: {'sale_id': 'TXN000390', 'product_id': 'P0001', 'store_id': 'S0001', 'customer_id': 'C00001', 'quantity': 5, 'sale_date': None, 'discount_percentage': 5, 'payment_mode': 'UPI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-08 15:24:51,951-INFO-Closing down clientserver connection
+2026-09-08 15:27:26,524-INFO-Pipeline Started
+2026-09-08 15:27:26,525-INFO-Starting EXTRACT phase
+2026-09-08 15:27:26,525-INFO-Reading products CSV
+2026-09-08 15:27:30,872-INFO-Reading customers CSV
+2026-09-08 15:27:31,218-INFO-Reading inventory CSV
+2026-09-08 15:27:31,563-INFO-Reading sales CSV
+2026-09-08 15:27:31,886-INFO-Reading stores CSV
+2026-09-08 15:27:32,107-INFO-Data extraction completed
+2026-09-08 15:27:32,107-INFO-Starting VALIDATE phase
+2026-09-08 15:27:32,107-INFO-Products Validation Started
+2026-09-08 15:27:33,307-INFO-Products validation completed. Accepted: 346, Rejected: 4
+2026-09-08 15:27:33,307-INFO-Customers Validation Started
+2026-09-08 15:27:34,323-INFO-Customers validation completed. Accepted: 343, Rejected: 7
+2026-09-08 15:27:34,324-INFO-Stores Validation Started
+2026-09-08 15:27:35,014-INFO-Stores validation completed. Accepted: 314, Rejected: 6
+2026-09-08 15:27:35,014-INFO-Inventory Validation Started
+2026-09-08 15:27:37,128-INFO-Inventory validation completed. Accepted: 348, Rejected: 12
+2026-09-08 15:27:37,129-INFO-Sales Validation Started
+2026-09-08 15:27:39,071-INFO-Sales validation completed. Accepted: 387, Rejected: 13
+2026-09-08 15:27:39,071-INFO-Data validation completed
+2026-09-08 15:27:39,071-INFO-Starting TRANSFORM phase
+2026-09-08 15:27:39,071-INFO-Products Transformation Started
+2026-09-08 15:27:39,137-INFO-Products Transformation Completed
+2026-09-08 15:27:39,137-INFO-Customers Transformation Started
+2026-09-08 15:27:39,193-INFO-Customers Transformation Completed
+2026-09-08 15:27:39,193-INFO-Stores Transformation Started
+2026-09-08 15:27:39,250-INFO-Stores Transformation Completed
+2026-09-08 15:27:39,250-INFO-Inventory Transformation Started
+2026-09-08 15:27:39,324-INFO-Inventory Transformation Completed
+2026-09-08 15:27:39,325-INFO-Sales Transformation Started
+2026-09-08 15:27:39,424-INFO-Sales Transformation Completed
+2026-09-08 15:27:39,424-INFO-Data transformation completed
+2026-09-08 15:27:39,424-INFO-Starting LOAD phase
+2026-09-08 15:27:39,424-INFO-Loading products
+2026-09-08 15:27:41,326-INFO-Products loaded successfully
+2026-09-08 15:27:41,326-INFO-Loading customers
+2026-09-08 15:27:41,756-INFO-Customers loaded successfully
+2026-09-08 15:27:41,756-INFO-Loading stores
+2026-09-08 15:27:42,181-INFO-Stores loaded successfully
+2026-09-08 15:27:42,181-INFO-Loading inventory
+2026-09-08 15:27:42,628-INFO-Inventory loaded successfully
+2026-09-08 15:27:42,628-INFO-Loading sales
+2026-09-08 15:27:43,387-INFO-Sales loaded successfully
+2026-09-08 15:27:43,387-INFO-Data loading completed
+2026-09-08 15:27:43,414-INFO-Closing down clientserver connection
